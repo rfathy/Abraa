@@ -1,0 +1,66 @@
+@import "overrides/variables.less";
+@import "overrides/mixins.less";
+@import "overrides/grid.less";
+@import "overrides/typography.less";
+@import "overrides/utilities.less";
+@import "overrides/icons.less";
+@import "overrides/modals.less";
+@import "overrides/buttons.less";
+@import "overrides/dropdowns.less";
+@import "overrides/forms.less";
+@import "pages/cards.less";
+@import "pages/bar.less";
+@import "pages/swiper.less";
+
+.clear{
+	clear:both;
+	display: block !important;
+}
+
+.clear20{
+	clear:both;
+	height: 50px;
+}
+
+.mainContent {
+	.content{
+		padding: 0;
+		.banner{
+		    height: 315px;
+		    background-image: url("../images/img/banner.png");
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		}
+		.pageSec{
+			border-bottom: @border-size-thin solid @hover;
+		    width: 95%;
+    		margin: 0 auto;
+		    clear: both;
+		    position:relative;
+    		&.advertAreaSmall{
+    			text-align: center;
+    			padding: 40px 0;
+    			img{
+    				width: 500px;
+    			}
+    			a:first-child{
+    				img{
+    					margin-right:20px;
+    				}
+    			}
+    		}
+    		&.advertAreaLarge{
+    			width: 100%;
+    			overflow: hidden;
+    			border-bottom: none;
+    			background-image:  url("../images/img/ad3.png");
+			    background-size: cover;
+			    background-repeat: no-repeat;
+		        height: 230px;
+    		}
+    		&.noBorder{
+    			border: none;
+    		}
+		}
+	}
+}

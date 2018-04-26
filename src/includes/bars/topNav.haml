@@ -1,0 +1,93 @@
+%nav.navbar
+	.container-fluid
+		.row.topNavBar
+			.col-sm-12
+				/ Sidebar on/off btn
+				%button.slideSideNav.collapsed{:type=>"button", 'data-toggle'=>"collapse", 'data-target'=>"#sidebar", 'aria-expanded'=>"false"}
+					%img.img-responsive.icn{:src=>"images/icons/slideSide.png"}
+				/ Logo
+				%a.logo{:herf=>""}
+					%img.img-responsive.icn{:src=>"images/img/logo.png"}
+				/Search form
+				%form.searchBar{'data-toggle'=>"modal", 'data-target'=>"#mySearch"}
+					.form-group
+						.input-group.searchBox
+							.custom-select.firstChild
+								%select
+									%option
+										Categories
+									%option
+										Electronics
+									%option
+										Electronics
+									%option
+										Electronics 
+							%input.form-control.input-md{:type=>"text", :placeholder=>"Search Items"}
+							%button.input-group-addon.lastChild.btn 
+								%img.icn{:src => "images/icons/bg_2-2x.png"}
+				/ Popup modal for search results
+				#mySearch.modal{'tabindex'=>"-1", 'role'=>"dialog", 'aria-labelledby'=>"myModalLabel", 'aria-hidden'=>"true"}
+					.modal-dialog 
+						%nav.navbar
+							.container-fluid
+								.row.topNavBar
+									.col-sm-12
+										%a.logo.col-sm-2{:herf=>""}
+											%img.img-responsive.icn{:src=>"images/img/logo.png"}
+
+										%form.searchBar.col-sm-7
+											.form-group
+												.input-group.searchBox
+													.custom-select.firstChild
+														%select
+															%option
+																Categories
+															%option
+																Electronics
+															%option
+																Electronics
+															%option
+																Electronics 
+													%input.form-control.input-md{:type=>"text", :placeholder=>"Search Items", :name=>"Amoun"}
+													%button.input-group-addon.lastChild.btn 
+														%img.icn{:src => "images/icons/bg_2-2x.png"}
+										.col-sm-2.pull-right
+											%button.close{'type'=>"button", 'data-dismiss'=>"modal", 'aria-label'=>"Close"}
+												%img{:src => "images/icons/grey-normal_3-2x.png"}
+				/ Add new RFQ
+				/
+					%a.newRfq{:href=>""} 
+						%img.icn{:src => "images/icons/notifications_2-2x.png"}
+					New RFQ				
+				/ User login area on/off btn for small screens
+				%button.navbar-toggle.collapsed{'type'=>"button", 'data-toggle'=>"collapse", 'data-target'=>"#userSettings", 'aria-expanded'=>"false"}
+					%img.avatar.img-responsive.icon-40-width{:src => "images/profiles/download.jpg"}
+				/ User login area (Logged in and not)
+				.collapse.navbar-collapse.pull-right#userSettings					
+					/
+						.loggedIn
+							%img.icn.dashAlerts{:src => "images/icons/bg_20-2x.png"}
+							%img.avatar.img-responsive.icon-40-width{:src => "images/profiles/download.jpg"}
+							%section.dropdown
+								%a.dropdown-toggle.pull-right{:type => "button", 'data-toggle' => "dropdown"}
+									%label User Name 
+									%span.caret
+									%span User Company
+								%ul.dropdown-menu{:role => "menu"}
+									%li
+										%a
+											Settings 
+									%li
+										%a
+											Dashboard 
+									%li
+										%a
+											Purchase Orders 
+									%li
+										%a
+											Log out 
+					
+					.logIn
+						%button.btn.btn-secondary.btn-xs{:type => "button"} Login
+						%button.btn.btn-primary.btn-xs{:type => "button"} sign up
+

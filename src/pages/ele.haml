@@ -1,0 +1,800 @@
+!!! 5
+%head
+	= Haml::Engine.new(File.read(File.expand_path '../includes/meta.haml', File.dirname(__FILE__))).render
+	%link{'href' => '../less/overrides.css', 'rel' => 'stylesheet', 'type' => 'text/css'}
+%body
+	.container-fluid
+		.row
+			.col-md-3{:style => "position:fixed"}
+				%ul.primaryBorder.withRadius{ :style=>"overflow-y: scroll; height:500px"}
+					%li
+						%a{:href => "#typography"} Typography
+					%li
+						%a{:href => "#Alerts"} Alerts
+					%li
+						%a{:href => "#borders"} borders
+					%li
+						%a{:href => "#icons"} icons BG & img
+					%li
+						%a{:href => "#BTN"} BTNs
+					%li
+						%a{:href => "#Breadcrumps"} Breadcrumps
+					%li
+						%a{:href => "#Avatar"} Avatar
+					%li
+						%a{:href => "#tooltip"} ToolTip
+					%li
+						%a{:href => "#labels"} Labels
+					%li
+						%a{:href => "#date"} Date picker
+					%li
+						%a{:href => "#Forms"} Forms
+					%li
+						%a{:href => "#Sorting"} Sorting
+					%li
+						%a{:href => "#Selections"} Selections
+					%li
+						%a{:href => "#Stepper"} Stepper
+					%li
+						%a{:href => "#modalBox"} Modal
+					%li
+						%a{:href => "#cards"} Cards
+					%li
+						%a{:href => "#tables"} Tables
+					%li
+						%a{:href => "#Bars"} Bars
+			.col-md-9{:style => "margin-left:25%"}
+				#typography
+					%h1 Typography
+					.openSans font family => openSans
+					.muli font family => muli
+					%p
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					%h1 Head 1
+					%h2.text-right Head 2: text align right
+					%h3.text-center Head 3: text align center
+					%h4 Head 4
+					%h5 Head 5
+					%h6 Head 6
+					%p.display1.bold Display text
+					%p.display1 Display text
+					%p.display2 Display text
+					%p.display3 Display text
+					%p.display4 Display text
+					.inverted inverted text area
+				.clear20
+				#Alerts
+					%h1 Alerts
+					.success.alert 
+						.alertIcon						
+						.alertText	
+							Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia
+						.alertAction.pull-right
+							%a{:href => "#"} upgrade
+					.info.alert 
+						.alertText	
+							Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia
+					.warning.alert 
+						.alertIcon
+						.alertText	
+							Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia
+					.danger.alert 
+						.alertText	
+							Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia
+						.alertAction.pull-right
+							%a{:href => "#"} upgrade
+					.snackbar.alert 
+						.alertText	
+							Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia
+						.alertAction.pull-right
+							%a{:href => "#"} upgrade
+				.clear20
+				#borders
+					%h1 Borders
+					.primaryBorder.withRadius
+						primaryBorder
+					.secondaryBorder.withRadius
+						secondaryBorder
+					.tertiaryBorder.withRadius
+						tertiaryBorder
+					.quaternaryBorder.withRadius
+						quaternaryBorder
+				.clear20
+				#icons
+					%h1 Icons
+					%img.icn.img-responsive{:src => "../images/icons/bg-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_2-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_3-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_4-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_5-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_6-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_7-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_8-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_9-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_10-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_11-2x.png"}
+
+					%img.icn.img-responsive{:src => "../images/icons/bg_12-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_13-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_14-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_15-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_16-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_17-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_18-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_19-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_20-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/bg_21-2x.png"}
+
+					%img.icn.img-responsive{:src => "../images/icons/bg_22-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/blue-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/blue-base_2-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/blue-base_3-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/blue-base-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/comnctn-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/contracts-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/cost-control-2x.png"}
+
+					%img.icn.img-responsive{:src => "../images/icons/drwngs-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/estimation-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/grey-active-2x.png"}
+					%img.icn.img-responsive{:src => "../images/icons/grey-base-2x.png"}
+					
+					
+					%span.icn.bg-3x 
+				.clear20
+				#BTN
+					%h1 Buttons
+					%button.btn.btn-primary.btn-lg{:type => "button"} large
+					%button.btn.btn-primary.btn-sm{:type => "button"} medium
+					%button.btn.btn-primary.btn-xs{:type => "button"} small
+					
+					.clear
+					%button.btn.btn-default.btn-sm{:type => "button"} Default
+					%button.btn.btn-primary.btn-sm{:type => "button"} primary
+					%button.btn.btn-secondary.btn-sm{:type => "button"} secondary
+
+					.clear
+					%button.btn.btn-default.btn-sm.active{:type => "button"} Default
+					%button.btn.btn-primary.btn-sm.active{:type => "button"} primary
+					%button.btn.btn-secondary.btn-sm.active{:type => "button"} secondary
+
+					.clear
+					%button.btn.btn-default.btn-sm.disabled{:type => "button"} Default
+					%button.btn.btn-primary.btn-sm.disabled{:type => "button"} primary
+					%button.btn.btn-secondary.btn-sm.disabled{:type => "button"} secondary
+
+					.clear
+					%button.btn.btn-primary.btn-sm.loading{:type => "button"} primary
+					%button.btn.btn-secondary.btn-sm.loading{:type => "button"} secondary
+
+					.clear
+					%button.btn.btn-default.btn-sm{:type => "button"} 
+						.btnIcon 
+						Default
+					%button.btn.btn-primary.btn-sm{:type => "button"} 
+						.btnIcon 
+						primary
+					%button.btn.btn-secondary.btn-sm{:type => "button"} 
+						.btnIcon 
+						secondary
+
+					.clear
+					.btn-group.btn-primary.btn-sm.btn.dropup
+						%button
+							Actions
+						%button.dropdown-toggle{:type => "button", 'data-toggle' => "dropdown"} 
+							%span.caret
+						%ul.dropdown-menu{:role => "menu"}
+							%li
+								%a
+									Action 
+							%li
+								%a
+									Action 
+							%li
+								%a
+									Action 
+							%li
+								%a
+									Action 
+					.btn-group.btn-secondary.btn-sm.btn
+						%button
+							Actions
+						%button.dropdown-toggle{:type => "button", 'data-toggle' => "dropdown"} 
+							%span.caret
+						%ul.dropdown-menu{:role => "menu"}
+							%li
+								%a
+									Action 2
+							%li
+								%a
+									Action 2
+							%li
+								%a
+									Action 2
+							%li
+								%a
+									Action 2
+				.clear20
+				%h1 BreadCrumps
+				= Haml::Engine.new(File.read(File.expand_path '../includes/bars/breadCrumb.haml', File.dirname(__FILE__))).render
+				.clear20
+				#Avatar
+					%h1 Avatar
+					%img.avatar.img-responsive.icon-24-width{:src => "../images/profiles/download.jpg"}
+					%img.avatar.img-responsive.icon-32-width{:src => "../images/profiles/download.jpg"}
+					%img.avatar.img-responsive.icon-40-width{:src => "../images/profiles/download.jpg"}
+					%img.avatar.img-responsive.icon-160-width{:src => "../images/profiles/download.jpg"}
+
+					.clear
+					%span.avatar.profileName.icon-24-width RR
+					%span.avatar.profileName.icon-32-width RR
+					%span.avatar.profileName.icon-40-width RR
+					%span.avatar.profileName.icon-160-width RR
+
+					.clear
+					%img.avatar.avatarGrey.img-responsive.icon-24-width{:src => "../images/profiles/Cfallback-icon@3x.png"}
+					%img.avatar.avatarGrey.img-responsive.icon-32-width{:src => "../images/profiles/CLfallback-icon@3x.png"}
+					%img.avatar.avatarGrey.img-responsive.icon-40-width{:src => "../images/profiles/Pfallback-icon@3x.png"}
+					%img.avatar.avatarGrey.img-responsive.icon-160-width{:src => "../images/profiles/PLfallback-icon@3x.png"}
+
+					.clear
+					%span.withStatus
+						%img.avatar.avatarGrey.img-responsive.icon-40-width{:src => "../images/profiles/Cfallback-icon@3x.png"}
+						%span.status.green
+					%span.withStatus
+						%img.avatar.avatarGrey.img-responsive.icon-40-width{:src => "../images/profiles/CLfallback-icon@3x.png"}
+						%span.status.red
+					%span.withStatus
+						%span.avatar.profileName.icon-40-width RR
+						%span.status.orange
+
+					// %img.avatar.img-responsive.company{:src => "../images/profiles/download.jpg"}
+				.clear20
+				#tooltip
+					%h1 Tooltips
+					%img.ttltp{:src => "../images/icons/black.png", "data-toggle"=>"tooltip", "data-placement"=>"right", "title"=>"Tooltip on right"}
+					%img.ttltp{:src => "../images/icons/black.png", "data-toggle"=>"tooltip", "data-placement"=>"top", "title"=>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"}
+					%img.ttltp{:src => "../images/icons/black.png", "data-toggle"=>"tooltip", "data-placement"=>"left", "title"=>"Tooltip on right"}
+					%img.ttltp{"data-html"=>"true", :src => "../images/icons/black.png", "data-toggle"=>"tooltip", "data-placement"=>"bottom", "title"=>"<span style='display: block;font-family: Muli;font-size: 14px;font-weight: bold;color: #f9fbfc; '>Lorem Ipsum is </span><span style='opacity: 0.1; background-color: #ffffff; display:block; height:1px; width:100%; margin: 8px auto;'></span>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"}
+					.clear20
+					%h2 Popover
+					
+					.popover-wrapper
+						%a{:href=>"#", 'data-role'=>"popover", 'data-target'=>"example-popover"} open
+						.popover-modal.example-popover
+							.popover-header
+								Title
+								%a{:href=>"#", 'data-toggle-role'=>"close", :style => "float: right"} 
+									%img.icn.img-responsive{:src => "../images/icons/close.png"}
+							.dividerH
+							.popover-body
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+
+					.popover-wrapper
+						%a{:href=>"#", 'data-role'=>"popover", 'data-target'=>"example-popover"} open
+						.popover-modal.example-popover
+							.popover-header
+								%a{:href=>"#", 'data-toggle-role'=>"close", :style => "float: right"} 
+									%img.icn.img-responsive{:src => "../images/icons/close.png"}
+							.popover-body
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+							.action.pull-right
+								%a{:href=>"#"}
+									Submit
+					.clear20
+					.popover-wrapper
+						%a{:href=>"#", 'data-role'=>"popover", 'data-target'=>"example-popover"} Open Panel
+						.popover-modal.lightBg.horizontalPanel.row
+							.popover-body
+								.secPanel.col-md-4 
+									.alertIcon
+									%h5.gamma Title
+									%ul
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+								.secPanel.col-md-4 
+									.alertIcon
+									%h5.gamma Title
+									%ul
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+								.secPanel.col-md-4 
+									.alertIcon
+									%h5.gamma Title
+									%ul
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+										%li
+											pending
+											%span
+												95
+					.clear20
+					.popover-wrapper
+						%a.hoverPopover{:href=>"#"} Hover for info Panel
+						= Haml::Engine.new(File.read(File.expand_path '../includes/supplierInfoPopup.haml', File.dirname(__FILE__))).render
+						
+				.clear20
+				#labels
+					%h1 Labels
+					%label.tag.defaultLabel
+						New Giza
+					%label.tag.greyLabel
+						Warning
+					%label.tag.blueLabel
+						Long message to see if it fits in
+					%label.tag.greenLabel
+						Warning
+					%label.tag.redLabel
+						Warning
+
+
+					.clear20
+					%label.tag.defaultLabel.smallChip.chip
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name Here
+						%a{:href=>""}
+							%img{:src => "../images/icons/close.png"}
+					%button.tag.defaultLabel.smallChip.chip{:type => "submit"}
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name bbHere
+						%a{:href=>""}
+							%img{:src => "../images/icons/close.png"}
+
+					.clear
+					%label.tag.defaultLabel.largeChip.chip
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name Here
+						%a{:href=>""}
+							%img{:src => "../images/icons/close.png"}
+					%button.tag.defaultLabel.largeChip.chip{:type => "submit"}
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name bbHere
+						%a{:href=>""}
+							%img{:src => "../images/icons/close.png"}
+
+					.clear
+					%label.tag.defaultLabel.splited.chip
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name Here
+						%span
+							Location Here
+							%a{:href=>""}
+								%img{:src => "../images/icons/close.png"}
+					%button.tag.defaultLabel.splited.chip{:type => "submit"}
+						%img.prof{:src => "../images/profiles/download.jpg"}
+						Full Name Here
+						%span
+							Location Here
+							%a{:href=>""}
+								%img{:src => "../images/icons/close.png"}
+
+
+					.clear20
+					%a.tag.defaultLabel{:href=>""}
+						New Giza
+
+
+					.clear20
+					%label.tag.blueLabel
+						New Giza
+					%label.tag.greyLabel
+						Warning
+						%span.counting 12
+					%label.tag.defaultLabel
+						Long message to see if it fits in
+						%a{:href=>""}
+							%img{:src => "../images/icons/close.png"}
+
+					.clear20
+					%label.tag.defaultLabel
+						%img{:src => "../images/icons/close.png"}
+						20
+					%label.tag.greyLabel
+						%img{:src => "../images/icons/close.png"}
+						0
+					%label.tag.blueLabel
+						%img{:src => "../images/icons/close.png"}
+						7575
+					%label.tag.greenLabel
+						%img{:src => "../images/icons/close.png"}
+						8
+					%label.tag.redLabel
+						%img{:src => "../images/icons/close.png"}
+						7
+					.clear20
+					%label.boxed.defaultLabel
+						New Giza
+					%label.boxed.greyLabel
+						Warning
+					%label.boxed.blueLabel
+						Long message to see if it fits in
+					%label.boxed.greenLabel
+						Warning
+					%label.boxed.redLabel
+						Warning
+					.clear20
+					%label.boxed.boxedLg.defaultLabel
+						New Giza
+					%label.boxed.boxedLg.greyLabel
+						Warning
+					%label.boxed.boxedLg.blueLabel
+						Long message to see if it fits in
+					%label.boxed.boxedLg.greenLabel
+						Warning
+					%label.boxed.boxedLg.redLabel
+						Warning
+
+
+					.clear20
+					%label.boxed.boxedBordered.greyLabel
+						Warning
+					%label.boxed.boxedBordered.blueLabel
+						Long message to see if it fits in
+					%label.boxed.boxedBordered.greenLabel
+						Warning
+					%label.boxed.boxedBordered.redLabel
+						Warning
+					.clear20
+					%label.boxed.boxedBordered.boxedLg.greyLabel
+						Warning
+					%label.boxed.boxedBordered.boxedLg.blueLabel
+						Long message to see if it fits in
+					%label.boxed.boxedBordered.boxedLg.greenLabel
+						Warning
+					%label.boxed.boxedBordered.boxedLg.redLabel
+						Warning
+
+					.clear20
+					%label.largewithRadius.greyLabel
+						0
+					%label.smallwithRadius.blueLabel
+						125
+					%label.round.greenLabel
+						13
+					%label.round.redLabel
+						5541
+				.clear20
+				// #datePicker used in styling
+				#date
+					%h1 Date Picker
+					= Haml::Engine.new(File.read(File.expand_path '../includes/datePicker.haml', File.dirname(__FILE__))).render
+				.clear20
+				#Forms
+					%h1 Forms
+					%form.formValidation#contact{'method'=>"post", 'action'=>""}	
+						.form-group
+							%label{:for=>"contact_name"} Name
+							%input.form-control.input-md#contact_name{:type=>"text", :placeholder=>"Enter Name", :name=>"name"}
+							.hashelp Choose a user
+							.error Incorrect URL
+						.form-group	
+							%label{:for=>"contact_email"} Email Address
+							%span.required
+								Required
+							%input.form-control.input-md#contact_email{:type=>"email", :placeholder=>"Enter email", :name=>"email"}
+							%img.ttltp{:src => "../images/icons/black.png", "data-toggle"=>"tooltip", "data-placement"=>"top", "title"=>"Tooltip on right"}
+							.hashelp Choose a user
+							.error Incorrect URL
+						.form-group	
+							%label{:for=>"contact_website"} contact_website
+							%input.form-control.input-md#contact_website{:type=>"email", :placeholder=>"Enter email", :name=>"website"}
+							.error Incorrect email address
+						.form-group	
+							%label{:for=>"contact_message"} contact_message
+							%textarea.form-control.input-md#contact_message{:name=>"message"}
+							.error Incorrect email address
+						.form-group
+							%label Select
+							.custom-select
+								%select.form-control.input-sm{}
+									%option{} dummy text of the 		
+									%option{} There are many variations		
+									%option{} dummy text of the 		
+									%option{} dummy text of the 		
+									%option{} There are many variations		
+									%option{} dummy text of the 	
+						.form-group.inlineDisplay
+							%label{:for=>"contact_website"} contact_website
+							%input.form-control.input-md#contact_website{:type=>"email", :placeholder=>"Enter email", :name=>"website"}
+							.error Incorrect email address.form-group	
+						.form-group.inlineDisplay
+							%label{:for=>"contact_website"} contact_website
+							%input.form-control.input-md{:type=>"email", :placeholder=>"Enter email", :name=>"website"}
+							.error Incorrect email address.form-group	
+						.form-group	
+							%label{:for=>""} with side
+							.input-group
+								.input-group-addon.firstChild EGP
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}	
+						.form-group	
+							%label{:for=>""} with side
+							.input-group
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								.input-group-addon.lastChild EGP	
+						.form-group	
+							%label{:for=>""} with side
+							.input-group
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								.input-group-addon.lastChild.lightBg TON	
+						.form-group	
+							%label{:for=>""} with side
+							.input-group
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								.custom-select.lastChild
+									%select
+										%option
+											Lorem Ipsum
+										%option
+											There are many variations
+										%option
+											There are many variations
+										%option
+											Lorem Ipsum
+										%option
+											There are many variations
+						.form-group	
+							%label{:for=>""} with side
+							.input-group
+								%input.form-control.input-md.selectUser{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								.custom-select.lastChild
+									%select
+										%option
+											There are many variations
+										%option
+											Lorem Ipsum
+										%option
+											There are many variations
+										%option
+											Lorem Ipsum
+						.form-group
+							.input-group.searchBox
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								%button.input-group-addon.lastChild.btn Search	
+						.form-group
+							.input-group.searchBox
+								%input.form-control.input-md{:type=>"text", :placeholder=>"Amoun", :name=>"Amoun"}
+								%button.input-group-addon.lastChild.btn.loading 
+									%img{:src => "../images/loading/loader.png"}
+						.form_submit.form-group
+							%button.btn.btn-primary.btn-sm{:type=>"submit"} Submit
+				.clear20
+				#Sorting
+					%h1 Sorting
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/sortingBar.haml', File.dirname(__FILE__))).render
+				.clear20
+				#Selections
+					%h1 Selections
+					%form.formValidation#contact{'method'=>"post", 'action'=>""}	
+						.form-group
+							%select.chosen-select.form-control.input-sm{'data-placeholder'=>"Select a user", 'multiple'=>"", 'tabindex'=>"-1", 'style'=>"display: none;"}
+								%optgroup{'label'=>"names A"}
+									%option.mltislct{'data-img-src'=>"../images/profiles/download.jpg"} Lorem Ipsum is
+									%option.mltislct{'data-img-src'=>"../images/profiles/prof.png"} when an unknown printer 
+									%option.mltislct{'data-img-src'=>" "} versions of Lorem Ipsum
+									%option.mltislct{'data-img-src'=>" "} Lorem Ipsum is
+									%option.mltislct{'data-img-src'=>" "} when an unknown printer 
+									%option.mltislct{'data-img-src'=>" "} Lorem Ipsum is
+								%optgroup{'label'=>"names A"}
+									%option.mltislct{'data-img-src'=>" "} and more recently with
+									%option.mltislct{'data-img-src'=>"../images/profiles/CLfallback-icon@3x.png"} versions of Lorem Ipsum
+									%option.mltislct{'data-img-src'=>" "} versions of Lorem Ipsum
+									%option.mltislct{'data-img-src'=>" "} when an unknown printer 
+									%option.mltislct{'data-img-src'=>" "} Lorem Ipsum is
+									%option.mltislct{'data-img-src'=>" "} and more recently with
+								%optgroup{'label'=>"names A"}
+									%option.mltislct{'data-img-src'=>" "} and more recently with
+									%option.mltislct{'data-img-src'=>" "} when an unknown printer 
+									%option.mltislct{'data-img-src'=>" "} Lorem Ipsum is
+									%option.mltislct{'data-img-src'=>" "} and more recently with
+									%option.mltislct{'data-img-src'=>" "} versions of Lorem Ipsum
+									%option.mltislct{'data-img-src'=>" "} versions of Lorem Ipsum
+				.clear20
+				#Stepper
+					// #wizard & #wizarV used in js & styling
+					#wizard
+						%h2 Create the work flow
+						%h3 
+							%label First Step
+							%span.subtitle.subtitle4 Optional Entery
+						%section 
+							%h4 Step 1. ....
+							.contentInner
+								%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a s
+						%h3 
+							%label Second Step
+						%section 
+							%h4 Step 2. ....
+							.contentInner
+								%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus.  Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.
+						%h3 
+							%label Third Step
+							%span.subtitle.subtitle4 Optional Entery
+						%section 
+							%h4 Step 3. ....
+							.contentInner
+								%p Lorem ipsum dolor sit amet, consectetur adipiscin platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus.  Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a sLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a s
+				.clear20
+				#modalBox
+					%h1 Modal
+					%button.btn.btn-secondary.btn-lg{'data-toggle'=>"modal", 'data-target'=>"#myModal"}
+						Launch Modal
+					#myModal.modal.fade{'tabindex'=>"-1", 'role'=>"dialog", 'aria-labelledby'=>"myModalLabel", 'aria-hidden'=>"true"}
+						.modal-dialog 
+							.modal-content 
+								.modal-header
+									%h3 Lorem Ipsum is simply dummy text 
+								.modal-footer
+									%button.btn.btn-default.btn-xs{'type'=>"button", 'data-dismiss'=>"modal", 'aria-hidden'=>"true"} Cancel
+									%button.btn.btn-primary.btn-xs add
+					%button.btn.btn-secondary.btn-lg{'data-toggle'=>"modal", 'data-target'=>"#formModal"}
+						Launch Modal
+					#formModal.modal.fade{'tabindex'=>"-1", 'role'=>"dialog", 'aria-labelledby'=>"myModalLabel", 'aria-hidden'=>"true"}
+						.modal-dialog 
+							.modal-content 
+								.modal-header
+									%h3 Add New User
+									%button.close{'type'=>"button", 'data-dismiss'=>"modal", 'aria-hidden'=>"true"}
+										%img.icn{:src=>"../images/icons/close-2x.png"}
+								.modal-body
+									%form.formValidation#contact{'method'=>"post", 'action'=>""}	
+										.form-group
+											%label{:for=>"contact_name"} Name
+											%input.form-control.input-md#contact_name{:type=>"text", :placeholder=>"Enter Name", :name=>"name"}
+											.hashelp Choose a user
+											.error Incorrect URL
+										.form-group	
+											%label{:for=>"contact_email"} Email Address
+											%span.required
+												Required
+											%input.form-control.input-md#contact_name{:type=>"text", :placeholder=>"Enter Name", :name=>"name"}
+											.hashelp Choose a user
+											.error Incorrect URL
+								.modal-footer
+									%button.btn.btn-default.btn-xs{'type'=>"button", 'data-dismiss'=>"modal", 'aria-hidden'=>"true"} Cancel
+									%button.btn.btn-primary.btn-xs add
+				.clear20
+				#cards
+					%h1 Cards
+					= Haml::Engine.new(File.read(File.expand_path '../includes/cards/catCard.haml', File.dirname(__FILE__))).render
+					.clear20
+					// move to includes/cards/prodCards.haml
+					// use .row-flex for same height cols
+					.row-flex
+						= Haml::Engine.new(File.read(File.expand_path '../includes/cards/prodCard.haml', File.dirname(__FILE__))).render
+				.clear20
+				#tables
+					%h1 Tables
+					.table-responsive
+						%table#tableSample.table
+							%thead
+								%tr
+									%th Request 
+									%th Qty 
+									%th Status 
+									%th Supplier 
+									%th Date 
+									%th 45
+							%tbody
+								%tr
+									%td.test PACK EOS 100D + 18/55 IS STM CadPACK EOS 100D + 18/55 IS STM Ca…
+									%td 400 Pcs
+									%td Done
+									%td Andorra Free Market
+									%td 13/01/2018, 1:38 PM
+									%td.popover-wrapper
+										%a{:href=>"#", 'data-role'=>"popover", 'data-target'=>"example-popover"} ...
+										.popover-modal.lightBg.row
+											%ul
+												%li
+													pending
+													%span
+														95
+												%li
+													pending
+													%span
+														95
+								
+								%tr
+									%td.test PACK EOS 
+									%td 500 Pcs
+									%td Done
+									%td Andorra Free Market
+									%td 13/01/2018, 1:38 PM
+									%td 
+										%span ...	
+				.clear20
+				#Bars
+					// Move bars to includes/bars
+					%h1 Prod Bar
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/prodTitleBar.haml', File.dirname(__FILE__))).render
+					%h1 Home Bar
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+					%h1 Feature Bar
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/featureBar.haml', File.dirname(__FILE__))).render
+					%h1 Search Results Bar
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/searchResultsBar.haml', File.dirname(__FILE__))).render
+					%h1 Control Bar
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/controlBar1.haml', File.dirname(__FILE__))).render
+					%h1 Control Bar with breadcrumps
+					= Haml::Engine.new(File.read(File.expand_path '../includes/bars/controlBar2.haml', File.dirname(__FILE__))).render
+				.clear20
+	%script{'src' => '../js/jquery.js'}
+	%script{'src' => '../js/bootstrap/dropdown.js'}
+	%script{'src' => '../js/bootstrap/tooltip.js'}
+	%script{'src' => '../js/bootstrap/modal.js'}
+
+	// popover and tooltip init
+	%script{'src' => '../js/jquery-popover-0.0.3.js'}
+	%script{'src' => '../js/bootstrap/popover.js'}	
+	:javascript
+		$(".ttltp").tooltip();
+		$('[data-role="popover"]').popover();
+		$(".hoverPopover").hover(
+			function() {
+				$(this).parent().toggleClass("open");
+			}
+		);
+
+	%script{'src' => '../js/datepicker.js'}
+	:javascript
+		$(function(){
+			$( ".date-input-css" ).datepicker();
+		})
+
+	//chosen plugin for creating new divs for select options	
+	%script{'src' => '../js/stylingOptions.js'}	
+	// multi select
+	%script{'src' => '../js/chosen.jquery.js'}
+	%script{'src' => '../js/init.js'}
+
+	// form validation
+	%script{'src' => '../js/validator.js'}
+
+	// wizard
+	%script{'src' => '../js/jquery.steps.js'}
+	:javascript
+		$(function (){
+			$("#wizard").steps({
+				headerTag: "h3",
+				bodyTag: "section",
+				transitionEffect: "fade"
+			});
+		});
+	// Rating
+	%script{'src' => '../js/rating.js'}
+
+	// DataTables
+	%script{'src' => '../js/jquery.dataTables.js'}
+	:javascript
+		$(document).ready(function() {
+			$('#tableSample').DataTable();
+		});
+	%script{'src' => '../js/styles.js'}
+

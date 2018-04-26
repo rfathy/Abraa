@@ -1,0 +1,35 @@
+//
+// Tooltips
+// --------------------------------------------------
+
+
+// Base class
+.tooltip {
+    position: absolute;
+    z-index: @zindex-tooltip;
+    display: block;
+    visibility: visible;
+    font-size: @font-size-sm;
+    .opacity(0);
+    max-width: 320px;
+
+    &.in     { .opacity(1); }
+    &.top    { margin-top:  -3px; padding: @tooltip-arrow-width 0; }
+    &.right  { margin-left:  3px; padding: 0 @tooltip-arrow-width; }
+    &.bottom { margin-top:   3px; padding: @tooltip-arrow-width 0; }
+    &.left   { margin-left: -3px; padding: 0 @tooltip-arrow-width; }
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+    padding: @padding-xs @padding-md;
+    color: @white;
+    line-height: 1.33;
+    text-decoration: none;
+    background-color: @hdr;
+    border-radius: @border-radius-base;
+    box-shadow: 0 1px 2px 0 #00000033;
+}
+
+.tooltip {
+}

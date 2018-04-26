@@ -1,0 +1,288 @@
+
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+    display: inline-block;
+    font-family: @font-family-muli; 
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;    
+    border-radius: @border-radius-base;
+    font-size: @font-size-md;
+    font-style: normal;
+    border: @border-size-thin solid transparent;
+    text-transform: uppercase;
+    margin-bottom: @margin-md;
+    padding: 0 @padding-md;
+    font-family: @font-family-muli;
+    letter-spacing: 0.4px;
+    font-weight: @font-weight-bold;
+    &:focus{
+        outline: 0
+    }
+    .btnIcon{
+        width: @icon-16-width;
+        height: @icon-16-height;
+        background-color: @pink;   /*to be replaced by a real icon*/
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: sub;
+    }
+    .caret {
+        margin-left: 0;
+    }
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+    background: transparent;
+    color: #858d9e;
+
+    &:hover,
+    &:focus {
+        background: @white;
+        color: #787f8f;
+        border: @border-size-thin solid #c2c8d1;
+    }
+
+    &:focus {
+        background: @white;
+        color: #787f8f;
+        border: @border-size-thin solid #c2c8d1;
+    }
+
+    &:active,
+    &.active {
+        background: #fafbfc;
+        border: @border-size-thin solid #c2c8d1;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        color: @stroke;
+        &:hover{
+            background: inherit;
+            border: 1px solid transparent;
+            cursor: default;
+        }
+    }
+}
+.btn-primary {
+    background: @blue;
+    color: @white;
+
+    &:hover{
+        background: @blueHover; 
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px #c2deff;
+        border: 2px solid #fff;
+        background: @blueHover; 
+    }
+
+    &:active,
+    &.active {
+        box-shadow: inset 1px 1px 2px 0 #00000033;
+        background: @blueHover; 
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        background: #a7cffc;
+        color: #c2deff;
+        &:hover{
+            background: #a7cffc;
+            cursor: default;
+        }
+    }
+
+    &.loading{
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+    }
+    &.loading.btn-primary{
+        background-image: url("../images/loading/loader.png");
+    }
+}
+
+.btn-secondary {
+    border: @border-size-thin solid @blue;
+    color: @blue;
+    background: transparent;
+
+    &:hover{
+        background: @blueHover; 
+        color: @white;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px #c2deff;
+        border: 2px solid #fff;
+        background: @blueHover; 
+        color: @white;
+    }
+
+    &:active,
+    &.active {
+        box-shadow: inset 1px 1px 2px 0 #00000033;
+        background: @blueHover; 
+        color: @white;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        border-color: #c2deff;
+        color: #a7cffc;
+        &:hover{
+            background: inherit;
+            border: 1px solid #c2deff;
+            cursor: default;
+        }
+    }
+
+    &.loading{
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+    }
+    &.loading.btn-secondary{
+        background-image: url("../images/loading/blueloader.png");
+        &:hover{
+            background-image: url("../images/loading/loader.png"); 
+        }
+    }
+
+}
+
+.btn-dimmed {
+    background: @state-success-text;
+    border: @border-size-thin solid @state-success-text;
+    color: @state-info-text;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        background: @hover;
+        border: @border-size-thin solid #c2c8d1;
+    }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+    min-width: 158px;
+    height: 52px;
+    font-size: 16px;
+    .caret {
+        border-width: 5px 5px 0;
+        border-bottom-width: 0;
+    }
+}
+.btn-sm {
+    min-width: 88px;
+    height: 40px;
+    font-size: 14px;
+}
+.btn-xs {
+    min-width: 72px;
+    height: 32px;
+    font-size: 12px;
+}
+
+// Buuton group
+//----------------------------------------------
+.btn-group{
+    display: inline;
+    padding: 10px 0 10px 16px;
+    position: relative;
+    button{
+        background: transparent;
+        color: inherit;
+        border: none;
+        font-size: inherit;
+        text-transform: inherit;
+        letter-spacing: inherit;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        &:focus{
+            outline: 0
+        }
+    }
+    &.btn-primary{
+        button:first-child{
+            border-right: @border-size-thin solid #5faaff;
+            padding: 5px 12px 5px 0;
+        }
+    }
+    &.btn-secondary{
+        button:first-child{
+            border-right: @border-size-thin solid #c2deff;
+            padding: 5px 12px 5px 0;
+        }
+        .dropdown-toggle{
+            padding-right: 15px;
+        }
+    }
+    .dropdown-toggle{
+        cursor: pointer;
+        padding: 10px 12px;
+    } 
+    &:focus {
+        outline: 0
+    }
+
+}
+
+// Sorting
+// ---------------------------------------
+.sorting{
+    .sortingbtns{
+        border: solid 1px @hover;
+        width: fit-content;
+        padding-right: 4px;
+        .btn{
+            margin-right: -4px;
+            border-radius: 0;
+            margin-bottom: 0;
+            border: none;
+            border-left: 1px solid @hover;
+            text-transform: capitalize;
+            &:first-child{
+                border-left:none;
+            }
+        }
+        .btn-primary{
+            &:focus,
+            &:active,
+            &.active {
+                box-shadow: none;
+                border: none;
+            }
+        }
+        .btn-dimmed{
+            &:focus,
+            &:hover {
+                background: @hover;
+                color: @hdr;
+                box-shadow: none;
+            }
+        }
+    }
+}

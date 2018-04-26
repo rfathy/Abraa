@@ -1,0 +1,5 @@
+.pageBar.controlBar.borderedBar
+	%h4 283 Items
+	.barAction.pull-right
+		= Haml::Engine.new(File.read(File.expand_path 'src/includes/bars/sortingBar.haml')).render
+	.clear

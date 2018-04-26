@@ -1,0 +1,27 @@
+%script{'src' => 'js/jquery.js'}
+%script{'src' => 'js/bootstrap/dropdown.js'}
+// Dropdown animation
+:javascript
+	$('.dropdown').on('show.bs.dropdown', function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+	});
+
+	$('.dropdown').on('hide.bs.dropdown', function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+	});
+%script{'src' => 'js/bootstrap/modal.js'}
+%script{'src' => 'js/bootstrap/collapse.js'}
+// select 
+%script{'src' => 'js/stylingOptions.js'}
+// styles overrides
+%script{'src' => 'js/styles.js'}
+%script{'src' => 'js/simple-sticky-sidebar.js'}
+:javascript
+	simpleStickySidebar('.sidebar-inner', {
+		container: '.sidebar',
+		topSpace: document.querySelector('.topNavBar').getBoundingClientRect().height, // or any no i.e 20
+		bottomSpace : 20
+	});
+%script{'src' => 'js/rating.js'}
+%script{'src' => 'js/swiper.js'}
+%script{'src' => 'js/swiperCall.js'}

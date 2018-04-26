@@ -1,0 +1,183 @@
+
+
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+
+// caret
+// -----------------------
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  opacity: 0.6;
+}
+
+.open{
+  .caret{
+    border-bottom: 4px solid;
+    border-top: none;
+  }  
+}
+
+.dropup{
+  .caret{
+    border-bottom: 4px solid;
+    border-top: none;
+  }
+}
+
+.dropup.open{
+  .caret{
+    border-top: 4px solid;
+    border-bottom: none;
+  }
+}
+
+
+// Breadcrumps
+// ----------------------------------
+
+#Breadcrumps{
+  letter-spacing: -0.2px;
+  .breadGoBack{
+    font-weight: @font-weight-semi;
+  }
+  font-size: @font-size-xs;
+  ul{
+    padding: 0;
+    li{
+      float: left;
+      display: inline-block;
+      padding: 0;
+      a, span{
+        padding: 0 @padding-s 0 0;
+        margin-right: @margin-xxs;
+        color: @bdy;
+      }
+      a,a:link,a:active,a:visited,a:hover{
+        background-position: right; 
+        color: @blue;        
+        background-repeat: no-repeat;
+        &:hover{
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+  
+  a.breadGoBack,
+  a.breadGoBack:link,
+  a.breadGoBack:active,
+  a.breadGoBack:visited{
+    padding-left: @padding-lg;
+    background-position: left;
+    margin: @margin-md 0;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// component-animations
+// --------------------------------
+.fade {
+  opacity: 0;
+  .transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: none;
+  &.in {
+    display: block;
+  }
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  .transition(height .35s ease);
+}
+
+// Reset the box-sizing
+
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  .img-responsive();
+}
+
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  // Keep them at most 100% wide
+  .img-responsive(inline-block);
+}

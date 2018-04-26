@@ -1,0 +1,123 @@
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate{
+  display: none;
+}
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-family: @font-family-OpenSans;
+  thead {
+    display: table-header-group;
+  }
+  tr{
+    page-break-inside: avoid;
+    &:hover{
+      cursor:pointer;
+      background: @table-bg-hover;
+      td{
+        border-bottom: 1px solid #e9ecf0
+      }
+    }
+    &:last-child{
+      border: none;
+    }
+  }
+  td,
+  th {
+    text-align: left;
+    padding: 0 @padding-md 0 0;
+    line-height: 56px;
+    vertical-align: top;
+    &:last-child{
+      text-align: right;
+      padding-right: 24px;
+    }
+    &:first-child{
+      padding-left: 24px;
+    }
+  }
+  th{
+    vertical-align: bottom;
+    border-top:none;
+    border-bottom: 1px solid @stroke;
+    opacity: 1;
+    font-weight: @font-weight-semi;
+  }
+  td{    
+    border-bottom: 1px solid @hover;
+    opacity: 0.8;
+    &.popover-wrapper{
+      opacity: 1;
+      display: table-cell;
+      position: initial;
+      .popover-modal{
+        position: absolute;
+        right: 30px;
+        left: auto;
+        min-width: auto;
+        margin-top: -5px;
+        padding: 0;
+        ul{
+          color: @bdy;
+          margin: 0;
+          padding:0;
+          li{
+            &:hover{
+              background: @table-bg-hover
+            }
+          }
+        }
+        &:before{
+          right: 19px;
+          left: auto;
+          border-collapse: initial;
+          display: flex;
+        }
+        &:after{
+          right: 20px;
+          border-collapse: initial;
+          left: auto;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+}
+@media print {
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+}

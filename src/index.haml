@@ -1,0 +1,110 @@
+!!! 5
+%head
+	= Haml::Engine.new(File.read(File.expand_path 'includes/meta.haml', File.dirname(__FILE__))).render
+	%link{'href' => 'less/index.css', 'rel' => 'stylesheet', 'type' => 'text/css'}
+%body
+	= Haml::Engine.new(File.read(File.expand_path 'includes/bars/topNav.haml', File.dirname(__FILE__))).render
+	%main
+		.container-fluid
+			/ Mid content area
+			.row.mainContent#main-content
+				/ Sidebar Slider
+				= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeSideBar.haml', File.dirname(__FILE__))).render
+				
+				#content.col-sm-9.content
+					.banner
+					= Haml::Engine.new(File.read(File.expand_path 'includes/bars/featureBar.haml', File.dirname(__FILE__))).render
+					.sliderSec.pageSec
+						- $secTitle = 'Discover By Categories'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Category Slider
+						.swiper-container#Discover
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide 
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/discoverCard.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.Discover
+						.swiper-button-prev.Discover
+					.sliderSec.pageSec
+						- $secTitle = 'Discover By Brands'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Brands Slider
+						.swiper-container#Brand
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide 
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/discoverBrand.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.Brand
+						.swiper-button-prev.Brand
+					.advertAreaSmall.pageSec
+						%a{:href=>""}
+							%img{:src=>"images/img/ad1.png"}
+						%a{:href=>""}
+							%img{:src=>"images/img/ad2.png"}
+					.sliderSec.pageSec
+						- $secTitle = 'Top Suppliers'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Suppliers Slider
+						.swiper-container#topSuppliers
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/suppliersCard.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.topSuppliers
+						.swiper-button-prev.topSuppliers
+					.sliderSec.pageSec
+						- $secTitle = 'Latest Offers and Deals'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Latest Offers Slider
+						.swiper-container#latestOffers
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/prodCard.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.latestOffers
+						.swiper-button-prev.latestOffers
+					.sliderSec.pageSec
+						- $secTitle = 'Top in Home Appliances'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Top in Home Appliances Slider
+						.swiper-container#Appliances
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/prodCard.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.Appliances
+						.swiper-button-prev.Appliances
+					.sliderSec.pageSec
+						- $secTitle = 'Top in Cameras, Lenses & Accessories'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						/ Top in Cameras Slider
+						.swiper-container#Cameras
+							.swiper-wrapper
+								- (1..16).each do |i|
+									.swiper-slide
+										= Haml::Engine.new(File.read(File.expand_path 'includes/cards/prodCard.haml', File.dirname(__FILE__))).render #{i}
+						.swiper-button-next.Cameras
+						.swiper-button-prev.Cameras
+					.advertAreaLarge.pageSec
+						/ Premium Buyers Sourcing
+					.pageSec.noBorder
+						- $secTitle = 'Premium Buyers Sourcing from Abraa'
+						- $secMore = 'hideMore'
+						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
+						.suppliersCard.col-sm-3
+							.suppliersImg
+								%img{:src=>"images/img/sponsor2.png"}
+						.suppliersCard.col-sm-3
+							.suppliersImg
+								%img{:src=>"images/img/sponsor2.png"}
+						.suppliersCard.col-sm-3
+							.suppliersImg
+								%img{:src=>"images/img/sponsor2.png"}
+						.suppliersCard.col-sm-3
+							.suppliersImg
+								%img{:src=>"images/img/sponsor2.png"}
+	= Haml::Engine.new(File.read(File.expand_path 'includes/footers/homeFooter.haml', File.dirname(__FILE__))).render
+
+
+	
+		

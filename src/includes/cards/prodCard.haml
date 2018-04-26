@@ -1,0 +1,27 @@
+.prodCard.col-sm-12
+	.verticalDivider
+	.supplierStatus
+		%img.icn{:src=>"images/icons/greentick.png"}
+		%span Verified supplier
+	.prodCardImg
+		%img{:src=>"images/img/Camera-Icon-PNG.png"}
+	%label.tag.redLabel 25% Off
+	.prodCardName
+		%a{:href=>""} Prod name goes here
+	.prodCardPrice
+		$56-545
+		%span.oldPrice 254
+		%span /Piece
+	.prodCardMinOrder
+		Min. 
+		%span 10 pieces
+	.prodCardRate
+		.marketName Andorra free market
+		#colorstar.starrr.ratable
+		.rateCount 154
+		.indicators
+			%input.form-control.input-md{'id'=>"rate[]", 'name'=>"rate[]", 'type'=>"text", 'placeholder'=>""}
+			%input.form-control.input-md.rateval{'id'=>"rating[]", 'name'=>"rating[]", 'type'=>"text", 'placeholder'=>""}
+		.marketLocation Australia
+	%button.btn.btn-secondary.btn-sm{:type=>"button"}
+		request quote

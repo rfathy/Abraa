@@ -1,0 +1,429 @@
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: @font-weight-semi;
+}
+span.required{
+	float: right;
+	display: inline-block;
+	color: @bdy;
+	opacity: 0.3;
+	font-size: @font-size-sm;
+}
+input[type="search"] {
+  
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; /* IE8-9 */
+  line-height: normal;
+}
+input[type="file"] {
+  display: block;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    height: auto;
+  }
+}
+.form-control {
+	border-radius: @border-radius-base;
+	border: solid @border-size-thin @iconLight;
+	padding: 0 @padding-s;
+	padding-right: @padding-lg;
+	font-family: @font-family-OpenSans;
+	font-size: @font-size-md;
+	display: block;
+	width: 100%;
+	font-size: @font-size-md;
+	color: @input-color;
+	vertical-align: middle;
+	background-image: none; 
+	&.input-md{
+		height: 40px;
+		line-height: 40px;
+	}
+	&:focus{
+		outline:0;
+		border: 2px solid @blue;
+		padding-right: @padding-lg;
+	}
+	&.active{
+		box-shadow: 0 0 3px 0 #528effb3;
+		border: solid @border-size-thin @blue;
+	}
+	&::placeholder{
+		color: @gray;
+	}
+	&.datepick{
+		background: url("../images/icons/calendar.png") no-repeat 99% center;
+		padding-right: @padding-lg;
+	}
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] & {
+		cursor: not-allowed;
+		background-color: @input-bg-disabled;
+	}
+	textarea& {
+		height: auto;
+	}
+	&.input-md{
+
+	}
+	&.input-sm{
+		font-size: @font-size-sm;
+	}
+	label{
+		margin-bottom: @padding-xxs;
+	}
+}
+.form-group {
+  	margin-bottom: @padding-md;
+	.ttltp{
+		float: right;
+	    display: inline-block;
+	    margin-top: -32px;
+	    margin-right: 10px;
+	}
+}
+.inlineDisplay{
+	input{
+		display: inline-block;
+	    width: 60%;
+	    margin-left: 12px;
+	}
+}
+.radio,
+.checkbox {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+  label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; 
+}
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; 
+}
+input[type="radio"],
+input[type="checkbox"],
+.radio,
+.radio-inline,
+.checkbox,
+.checkbox-inline {
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+.form-control-static {
+  margin-bottom: 0; 
+}
+.help-block {
+  display: block; 
+  margin-top: 5px;
+  margin-bottom: 10px;  
+}
+.form-inline {
+  @media (min-width: @screen-sm) {
+    .form-group  {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }    
+    .form-control {
+      display: inline-block;
+    }    
+    select.form-control {
+      width: auto;
+    }    
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      float: none;
+      margin-left: 0;
+    }
+  }
+}
+.form-horizontal {
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;    
+  }
+  .radio,
+  .checkbox {
+    
+  }
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: right;
+    }
+  }
+}
+
+/*Select option styling*/
+.custom-select {
+	position: relative;
+	select {
+		display: none;
+	}
+	.select-selected {
+		border-radius: @border-radius-base;
+		border: solid @border-size-thin @iconLight;
+		padding: 0 @padding-s;
+		padding-right: @padding-lg;
+		font-family: @font-family-OpenSans;
+		font-size: @font-size-md;
+		display: block;
+		width: 100%;
+		font-size: @font-size-md;
+		color: @input-color;
+		vertical-align: middle;
+		background-image: none; 
+		height: 40px;
+		line-height: 40px;
+		&:after{
+			position: absolute;
+			content: "";
+			top: 19px;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-color: @bdy transparent transparent transparent;
+		}
+	}
+	.select-items{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		border-radius: @border-radius-base;
+		box-shadow: 0 4px 6px 0 #00000033;
+		background-color: @white;
+		border: solid @border-size-thin @hover;
+		margin-top: @margin-xxs;
+	}
+}
+.select-selected.select-arrow-active:after{
+	border-color: transparent transparent @bdy transparent;
+	top: 10px;
+}
+.select-selected, 
+.select-items div{
+	padding: @padding-s @padding-md;
+	cursor: pointer;
+}
+.select-hide {
+	display: none;
+}
+.select-items div:hover {
+	background-color: #f5f7fa;
+}
+/*multi input same group*/
+.input-group{
+	.input-group-addon {
+	    font-size: 14px;
+	    text-align: center;
+	    border-radius: 4px;
+	    width: auto;
+		display: inline-block;
+	    padding: 0 @padding-s;
+	    vertical-align: bottom;
+	    border: solid @border-size-thin @iconLight;
+	    height: 40px;
+	    line-height: 40px;
+	    font-family: @font-family-muli;
+	    font-weight: @font-weight-bold;
+	    &.firstChild{
+		    border-top-right-radius: 0;
+		    border-bottom-right-radius: 0;
+	    	margin-right: -5px;
+	    	border-right: none;
+	    }
+	    &.lastChild{
+	    	border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+			border-left: 0;
+	    	margin-left: -4px;
+	    	border-left: none;
+	    }
+	    &.lightBg{
+	    	background: @white;
+	    }
+	}
+	.custom-select.lastChild{
+		display: inline-block;
+		margin-left: -1px;
+		.select-selected {
+			background: @iconLight;
+			border-radius: @border-radius-base;
+			border: solid @border-size-thin @iconLight;
+			padding: 0 @padding-s;
+			padding-right: @padding-lg;
+			font-family: @font-family-muli;
+			font-size: @font-size-md;
+			font-weight: @font-weight-bold;
+			width: auto;
+			font-size: @font-size-md;
+			color: @input-color;
+			vertical-align: middle;
+			background-image: none; 
+			border-left: none;
+		    border-bottom-left-radius: 0;
+		    border-top-left-radius: 0;
+		    margin-left: -3px;
+			&:after{
+				position: absolute;
+				content: "";
+				top: 19px;
+				right: 16px;
+				width: 0;
+				height: 0;
+				border: 6px solid transparent;
+				border-color: @bdy transparent transparent transparent;
+			}
+		}
+	}
+	.form-control{
+		display: inline-block;
+	    position: relative;
+	    z-index: 2;
+	    margin-bottom: 0;
+	    vertical-align: top;
+	    width: auto;
+    	&:last-child{
+		    border-bottom-left-radius: 0;
+	    	border-top-left-radius: 0;
+    	}
+    	&:first-child{
+		    border-bottom-right-radius: 0;
+	    	border-top-right-radius: 0;
+    	}
+    	&:focus{
+    		border: solid @border-size-thin @iconLight;0
+    		padding: 0 @padding-lg 0 @padding-s;
+    	}
+	}
+	.selectUser{
+		background: url("../images/profiles/prof.png") 3% center no-repeat;
+		padding-left: @padding-lg;
+	}
+	&.searchBox{
+		.input-group-addon.lastChild{
+			vertical-align: top;
+		}
+		input{
+			background: url("../images/icons/bg_2.png") 3% center no-repeat;
+			padding-left: @padding-lg + 10;
+			&:focus{
+				padding-left: @padding-lg + 10;
+				& ~ .input-group-addon.lastChild{
+					border: @border-size-thin solid @blue;
+					color: @white;
+					background: @blue;
+					font-weight: @font-weight-bold;
+				}
+			}
+		}
+		.btn.loading{
+			border: @border-size-thin solid @blue;
+			color: @white;
+			background: @blue;
+			padding: 0 32px;
+	    }
+	}
+}
+.input-group-addon:first-child {
+  border-right: 0;
+
+}
+.input-group-addon:last-child {
+  border-left: 0;
+}
+/*Validation*/
+.formValidation{
+	.hashelp{
+		color: @gray;
+		font-size: @font-size-sm;
+		display: block;
+  		margin-top: 5px;
+	}
+	.error{
+		display: none;
+	}
+	.invalid{
+		border: 2px solid @red;
+		background:  url("../images/icons/invalid.png") no-repeat 99% center;
+		padding: @padding-s - 1;
+		padding-right: @padding-lg;
+		& ~ .error{
+			display: block;
+			font-size: @font-size-sm;
+			color: @red;
+  			margin-top: 5px;
+		}
+		& ~ .hashelp,
+		& ~ img.ttltp{
+			display: none;
+		}
+	}
+	.valid{
+		background:  url("../images/icons/valid.png") no-repeat 99% center;
+	}
+}

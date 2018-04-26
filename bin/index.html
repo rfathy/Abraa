@@ -1,0 +1,2753 @@
+<!DOCTYPE html>
+<head>
+<meta content='text/html' http-equiv='Content-Type'>
+<meta content='' name='description'>
+<meta content='' name='keywords'>
+<meta content='all' name='robots'>
+<meta content='' name='author'>
+<meta content='' name='Copyright'>
+<meta content='' name='Email'>
+<meta href='' rel='shortcut icon'>
+<meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'>
+
+<link href="less/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav class='navbar'>
+<div class='container-fluid'>
+<div class='row topNavBar'>
+<div class='col-sm-12'>
+<!-- Sidebar on/off btn -->
+<button aria-expanded='false' class='slideSideNav collapsed' data-target='#sidebar' data-toggle='collapse' type='button'>
+<img class='img-responsive icn' src='images/icons/slideSide.png'>
+</button>
+<!-- Logo -->
+<a class='logo' herf=''>
+<img class='img-responsive icn' src='images/img/logo.png'>
+</a>
+<!-- Search form -->
+<form class='searchBar' data-target='#mySearch' data-toggle='modal'>
+<div class='form-group'>
+<div class='input-group searchBox'>
+<div class='custom-select firstChild'>
+<select>
+<option>
+Categories
+</option>
+<option>
+Electronics
+</option>
+<option>
+Electronics
+</option>
+<option>
+Electronics
+</option>
+</select>
+</div>
+<input class='form-control input-md' placeholder='Search Items' type='text'>
+<button class='input-group-addon lastChild btn'>
+<img class='icn' src='images/icons/bg_2-2x.png'>
+</button>
+</div>
+</div>
+</form>
+<!-- Popup modal for search results -->
+<div aria-hidden='true' aria-labelledby='myModalLabel' class='modal' id='mySearch' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<nav class='navbar'>
+<div class='container-fluid'>
+<div class='row topNavBar'>
+<div class='col-sm-12'>
+<a class='logo col-sm-2' herf=''>
+<img class='img-responsive icn' src='images/img/logo.png'>
+</a>
+<form class='searchBar col-sm-7'>
+<div class='form-group'>
+<div class='input-group searchBox'>
+<div class='custom-select firstChild'>
+<select>
+<option>
+Categories
+</option>
+<option>
+Electronics
+</option>
+<option>
+Electronics
+</option>
+<option>
+Electronics
+</option>
+</select>
+</div>
+<input class='form-control input-md' name='Amoun' placeholder='Search Items' type='text'>
+<button class='input-group-addon lastChild btn'>
+<img class='icn' src='images/icons/bg_2-2x.png'>
+</button>
+</div>
+</div>
+</form>
+<div class='col-sm-2 pull-right'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<img src='images/icons/grey-normal_3-2x.png'>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- Add new RFQ -->
+<!--
+<a class='newRfq' href=''>
+<img class='icn' src='images/icons/notifications_2-2x.png'>
+</a>
+New RFQ
+-->
+<!-- User login area on/off btn for small screens -->
+<button aria-expanded='false' class='navbar-toggle collapsed' data-target='#userSettings' data-toggle='collapse' type='button'>
+<img class='avatar img-responsive icon-40-width' src='images/profiles/download.jpg'>
+</button>
+<!-- User login area (Logged in and not) -->
+<div class='collapse navbar-collapse pull-right' id='userSettings'>
+<!--
+<div class='loggedIn'>
+<img class='icn dashAlerts' src='images/icons/bg_20-2x.png'>
+<img class='avatar img-responsive icon-40-width' src='images/profiles/download.jpg'>
+<section class='dropdown'>
+<a class='dropdown-toggle pull-right' data-toggle='dropdown' type='button'>
+<label>User Name</label>
+<span class='caret'></span>
+<span>User Company</span>
+</a>
+<ul class='dropdown-menu' role='menu'>
+<li>
+<a>
+Settings
+</a>
+</li>
+<li>
+<a>
+Dashboard
+</a>
+</li>
+<li>
+<a>
+Purchase Orders
+</a>
+</li>
+<li>
+<a>
+Log out
+</a>
+</li>
+</ul>
+</section>
+</div>
+-->
+<div class='logIn'>
+<button class='btn btn-secondary btn-xs' type='button'>Login</button>
+<button class='btn btn-primary btn-xs' type='button'>sign up</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+<main>
+<div class="container-fluid">
+<!-- Mid content area -->
+<div class="row mainContent" id="main-content">
+<!-- Sidebar Slider -->
+<div class='col-sm-3 sidebarSlider in' id='sidebar'>
+<div class='sidebar'>
+<div class='sidebar-inner'>
+<div id='Breadcrumps'>
+<a class='breadGoBack icn bg_5' href=''>ALL categories</a>
+</div>
+<ul>
+<li class='active dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle icn bg' data-toggle='dropdown' href='' role='button'>
+Electronics
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu'>
+<li>
+<a href=''>Home appliances</a>
+</li>
+<li>
+<a href=''>Cameras, Lenses & Accessories</a>
+</li>
+<li>
+<a href=''>TV, Audio & Video accessories</a>
+</li>
+<li>
+<a href=''>Cables & Connectors</a>
+</li>
+<li>
+<a class='more' href=''>+ More</a>
+</li>
+</ul>
+</li>
+<li>
+<a class='bg_18' href=''>Suppliers</a>
+</li>
+<li>
+<a class='bg_17' href=''>Offers & Deals</a>
+</li>
+<li>
+<a class='bg_19' href=''>Favorites</a>
+</li>
+<span class='dividerH'></span>
+<li>
+<a class='bg_12' href=''>Dashboard</a>
+</li>
+<li>
+<a class='cost-control' href=''>Purchase orders</a>
+</li>
+<li>
+<a class='contracts' href=''>My RFQs</a>
+</li>
+<span class='dividerH'></span>
+<li>
+<a class='comnctn' href=''>Messages</a>
+</li>
+<li>
+<a class='grey-base_5' href=''>Settings</a>
+</li>
+</ul>
+<!-- SideFooter -->
+<span class='dividerH'></span>
+<div class='footer'>
+<ul>
+<li class='lang'>
+<a href=''>
+En
+</a>
+</li>
+<li>
+<a href=''>About</a>
+</li>
+<li>
+<a href=''>Privacy</a>
+</li>
+<li>
+<a href=''>Terms</a>
+</li>
+</ul>
+<button class='btn btn-secondary btn-xs'>
+sell on abraa
+</button>
+<div class='Designs'>
+<span>UX/UI Designed by</span>
+<a href='http://simpleia.com/' target='_blank'>
+<img src='images/img/simpleia_logo.png'>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-9 content" id="content">
+<div class="banner"></div>
+<div class='pageBar featureBar borderedBar'>
+<div class='col-sm-4'>
+<div class='featureIcon'>
+<img class='icn' src='images/icons/Securepaymets.png'>
+</div>
+<div class='featureDescription'>
+<label>Secure paymets</label>
+<span>Abraa pay security to all parties</span>
+</div>
+</div>
+<div class='col-sm-4'>
+<div class='featureIcon'>
+<img class='icn' src='images/icons/inspection.png'>
+</div>
+<div class='featureDescription'>
+<label>Products inspection</label>
+<span>Onsite product verification for buyers</span>
+</div>
+</div>
+<div class='col-sm-4'>
+<div class='featureIcon'>
+<img class='icn' src='images/icons/BuyerProtection.png'>
+</div>
+<div class='featureDescription'>
+<label>Buyer Protection</label>
+<span>Safe, secure, and trusted way of buying</span>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Discover By Categories</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Category Slider -->
+<div class="swiper-container" id="Discover">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverCard col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/cat1.png'>
+</div>
+<h4>Home Appliances</h4>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next Discover"></div>
+<div class="swiper-button-prev Discover"></div>
+</div>
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Discover By Brands</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Brands Slider -->
+<div class="swiper-container" id="Brand">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='discoverBrand col-sm-12'>
+<div class='discoverImg'>
+<img src='images/img/logo1.png'>
+</div>
+<h4>Apple</h4>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next Brand"></div>
+<div class="swiper-button-prev Brand"></div>
+</div>
+<div class="advertAreaSmall pageSec">
+<a href="">
+<img src="images/img/ad1.png" />
+</a>
+<a href="">
+<img src="images/img/ad2.png" />
+</a>
+</div>
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Top Suppliers</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Suppliers Slider -->
+<div class="swiper-container" id="topSuppliers">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='suppliersCard col-sm-12'>
+<div class='suppliersImg'>
+<img src='images/img/sponsor2.png'>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next topSuppliers"></div>
+<div class="swiper-button-prev topSuppliers"></div>
+</div>
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Latest Offers and Deals</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Latest Offers Slider -->
+<div class="swiper-container" id="latestOffers">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next latestOffers"></div>
+<div class="swiper-button-prev latestOffers"></div>
+</div>
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Top in Home Appliances</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Top in Home Appliances Slider -->
+<div class="swiper-container" id="Appliances">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next Appliances"></div>
+<div class="swiper-button-prev Appliances"></div>
+</div>
+<div class="sliderSec pageSec">
+<div class='pageBar homeBar'>
+<h2>Top in Cameras, Lenses & Accessories</h2>
+<div class='barAction pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<!-- Top in Cameras Slider -->
+<div class="swiper-container" id="Cameras">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+<div class="swiper-slide">
+<div class='prodCard col-sm-12'>
+<div class='verticalDivider'></div>
+<div class='supplierStatus'>
+<img class='icn' src='images/icons/greentick.png'>
+<span>Verified supplier</span>
+</div>
+<div class='prodCardImg'>
+<img src='images/img/Camera-Icon-PNG.png'>
+</div>
+<label class='tag redLabel'>25% Off</label>
+<div class='prodCardName'>
+<a href=''>Prod name goes here</a>
+</div>
+<div class='prodCardPrice'>
+$56-545
+<span class='oldPrice'>254</span>
+<span>/Piece</span>
+</div>
+<div class='prodCardMinOrder'>
+Min.
+<span>10 pieces</span>
+</div>
+<div class='prodCardRate'>
+<div class='marketName'>Andorra free market</div>
+<div class='starrr ratable' id='colorstar'></div>
+<div class='rateCount'>154</div>
+<div class='indicators'>
+<input class='form-control input-md' id='rate[]' name='rate[]' placeholder='' type='text'>
+<input class='form-control input-md rateval' id='rating[]' name='rating[]' placeholder='' type='text'>
+</div>
+<div class='marketLocation'>Australia</div>
+</div>
+<button class='btn btn-secondary btn-sm' type='button'>
+request quote
+</button>
+</div>
+
+</div>
+</div>
+</div>
+<div class="swiper-button-next Cameras"></div>
+<div class="swiper-button-prev Cameras"></div>
+</div>
+<div class="advertAreaLarge pageSec">
+<!-- Premium Buyers Sourcing -->
+</div>
+<div class="pageSec noBorder">
+<div class='pageBar homeBar'>
+<h2>Premium Buyers Sourcing from Abraa</h2>
+<div class='barAction hideMore pull-right'>
+<a href=''>See all</a>
+</div>
+<div class='clear'></div>
+</div>
+
+<div class="suppliersCard col-sm-3">
+<div class="suppliersImg">
+<img src="images/img/sponsor2.png" />
+</div>
+</div>
+<div class="suppliersCard col-sm-3">
+<div class="suppliersImg">
+<img src="images/img/sponsor2.png" />
+</div>
+</div>
+<div class="suppliersCard col-sm-3">
+<div class="suppliersImg">
+<img src="images/img/sponsor2.png" />
+</div>
+</div>
+<div class="suppliersCard col-sm-3">
+<div class="suppliersImg">
+<img src="images/img/sponsor2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script src='js/jquery.js'></script>
+<script src='js/bootstrap/dropdown.js'></script>
+<!-- / Dropdown animation -->
+<script>
+  $('.dropdown').on('show.bs.dropdown', function() {
+  	$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+  
+  $('.dropdown').on('hide.bs.dropdown', function() {
+  	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+</script>
+<script src='js/bootstrap/modal.js'></script>
+<script src='js/bootstrap/collapse.js'></script>
+<!-- / select -->
+<script src='js/stylingOptions.js'></script>
+<!-- / styles overrides -->
+<script src='js/styles.js'></script>
+<script src='js/simple-sticky-sidebar.js'></script>
+<script>
+  simpleStickySidebar('.sidebar-inner', {
+  	container: '.sidebar',
+  	topSpace: document.querySelector('.topNavBar').getBoundingClientRect().height, // or any no i.e 20
+  	bottomSpace : 20
+  });
+</script>
+<script src='js/rating.js'></script>
+<script src='js/swiper.js'></script>
+<script src='js/swiperCall.js'></script>
+
+</body>

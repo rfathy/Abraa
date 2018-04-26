@@ -1,0 +1,59 @@
+/**/
+.success{
+	color: @state-success-text;
+	background-color: @state-success-bg;
+}
+.info{
+	color: @state-info-text;
+	background-color: @state-info-bg;
+	border: @state-info-border;
+}
+.warning{
+	color: @state-warning-text;
+	background-color: @state-warning-bg;
+}
+.danger{
+	color: @state-danger-text;
+	background-color: @state-danger-bg;
+}
+.snackbar{
+	color: @state-snackbar-text;
+	background-color: @state-snackbar-bg;	
+}
+.alert{
+	font-family: @font-family-muli;
+	padding: @alerts-padding;
+	font-size: @font-size-lg;
+	border-radius: @border-radius-base;
+	box-shadow: @alerts-box-shadow;	
+	margin-bottom: @margin-s;
+	div{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	.alertAction{
+		a,
+		a:link,
+		a:active,
+		a:visited,
+		a:hover{
+			color: @white;
+			font-weight: @font-weight-bold;
+			text-transform: @text-trans-upper;
+			font-size: @font-size-md;
+			letter-spacing: 0.4px;
+			text-decoration:none;
+		}
+	}
+}
+.snackbar{
+	.alertAction{
+		a,
+		a:link,
+		a:active,
+		a:visited,
+		a:hover{
+			color: @blue;
+		}
+	}
+}

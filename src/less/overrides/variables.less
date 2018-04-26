@@ -1,0 +1,296 @@
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+@grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:         30px;
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+@container-lg:                 @container-large-desktop;
+
+
+
+// Navbar collapse
+
+// Point at which the navbar becomes uncollapsed
+@grid-float-breakpoint:     @screen-sm-min;
+// Point at which the navbar begins collapsing
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+// Typography
+// -------------------------
+
+@font-family-muli:  			"Muli", "Open Sans", Arial;
+@font-family-OpenSans: 			"Open Sans", Arial;
+
+@font-weight-normal: 			400;
+@font-weight-semi: 				600;
+@font-weight-bold: 				700;
+@font-weight-extra: 			800;
+
+@font-size-xs: 					11px;
+@font-size-sm: 					12px;
+@font-size-md: 					14px;
+@font-size-lg: 					16px;
+@font-size-xl: 					20px;
+@font-size-xxl: 				24px;
+@font-size-xxxl: 				28px;
+@font-size-display-xs: 			34px;
+@font-size-display-sm: 			45px;
+@font-size-display-md: 			56px;
+@font-size-display-lg: 			112px;
+
+@text-trans-upper: uppercase;
+@text-trans-cap:   capitalize;
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-md * @line-height-base); // ~20px
+
+
+// Colors
+// ------------------------
+
+
+// check quaternaryBorder when all colors are completed.
+// check btns when all colors are completed.
+
+@green: 		#47cc4a;
+@red: 			#e74c3c;
+@orange: 		#ffc107;
+@navyBlue: 		#26344c;
+@pink: 			#ff6ef2;
+@white:			#ffffff;
+@teal:			#009688;
+@blue:			#4da1ff;
+@blueHover:     #4394F0;
+@gray:			#a8b0bf;
+
+@bdy:			#3e4352;
+@hdr:			#252833;
+@subHdr:		#858d9e;
+
+@primary:		#4da1ff;
+@secondary:		#e74c3c;
+@tertiary:		#93d300;
+@quaternary:	#ffc107;
+
+@hover:			#e9ecf0;
+@stroke:		#ccd2db;
+
+@iconLight:		#dadee6;
+@iconLightHOver:#c7ccd6;
+@icon:			@gray;
+@iconHover:		#9299a6;
+@iconDark:		#5e6475;
+@iconDarkHover:	#494f5c;
+
+
+@labelGrey:		#e9edf2;
+@labelGreyDark: #99a4b4;
+
+
+
+
+// Form states and alerts
+// -------------------------
+
+@state-success-text:             #f9fbfc;
+@state-success-bg:               @green;
+
+@state-info-text:                #252833;
+@state-info-bg:                  #f9fbfc;
+@state-info-border:              solid 1px #dfe5eb;
+
+@state-warning-text:             #252833;
+@state-warning-bg:               @orange;
+
+@state-danger-text:              #f9fbfc;
+@state-danger-bg:				 @red;
+
+@state-snackbar-text:            #f9fbfc;
+@state-snackbar-bg:				 @navyBlue;
+
+@alerts-padding:				 @padding-md @padding-lg;
+@alerts-box-shadow:				 0 1px 2px 0 #00000033;
+
+
+
+// Icons
+// -------------------------
+
+@icon-12-width:				12px;
+@icon-12-height:			12px;
+
+@icon-16-width:				16px;
+@icon-16-height:			16px;
+
+@icon-18-width:				18px;
+@icon-18-height:			18px;
+
+@icon-24-width:				24px;
+@icon-24-height:			24px;
+
+@icon-32-width:				32px;
+@icon-32-height:			32px;
+
+@icon-36-width:				36px;
+@icon-36-height:			36px;
+
+@icon-40-width:				40px;
+@icon-40-height:			40px;
+
+@icon-56-width:				56px;
+@icon-56-height:			56px;
+
+@icon-160-width:			160px;
+@icon-160-height:			160px;
+
+// Margins and Paddings
+// ---------------------------
+
+@margin-t:			2px;
+@margin-xxs:		4px;
+@margin-xs:			8px;
+@margin-s:			12px;
+@margin-md:			16px;
+@margin-lg:			32px;
+@margin-xl:			64px;
+
+@padding-t:				2px;
+@padding-xxs:			4px;
+@padding-xs:			8px;
+@padding-s:				12px;
+@padding-md:			16px;
+@padding-lg:			32px;
+@padding-xl:			64px;
+
+// Borders
+//-----------------------------
+@border-radius-base:            4px;
+@border-size-thick:				3px;
+@border-size-thin:				1px;
+
+// Caret
+// ----------------------------
+@caret-width-base:               4px;
+@caret-width-large:              5px;
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+
+// Tooltips
+// -------------------------
+@tooltip-max-width:           200px;
+@tooltip-color:               @white;
+@tooltip-bg:                  @hdr;
+ 
+@tooltip-arrow-width:         5px;
+@tooltip-arrow-color:         @tooltip-bg;
+
+// Popovers
+// -------------------------
+@popover-bg:                          @hdr;
+@popover-max-width:                   auto;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 #fff;
+
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           rgba(0,0,0,.25);
+@popover-arrow-outer-fallback-color:  #999;
+
+
+// Forms
+// -------------------------
+
+@input-bg:                       @white;
+@input-bg-disabled:              @iconLight;
+
+@input-color:                    @bdy;
+@input-border:                   @iconLight;
+@input-border-radius:            @border-radius-base;
+@input-border-focus:             @blue;
+
+@input-color-placeholder:        @gray;
+
+@input-group-addon-bg:           @gray;
+@input-group-addon-border-color: @input-border;
+
+@input-group-addon-bg:           @hover;
+
+
+// Iconography
+// -------------------------
+
+@icon-font-path:          "../fonts/";
+@icon-font-name:          "glyphicons-halflings-regular";
+
+
+// Tables
+// -------------------------
+
+@table-bg:                           transparent; 
+@table-bg-accent:                    #f9f9f9; 
+@table-bg-hover:                     #f2f6fa;
+@table-bg-active:                    @table-bg-hover;
+
+@table-border-color:                 @hover; 
