@@ -20,10 +20,12 @@
     border: @border-size-thin solid transparent;
     text-transform: uppercase;
     margin-bottom: @margin-md;
-    padding: 0 @padding-md;
     font-family: @font-family-muli;
     letter-spacing: 0.4px;
     font-weight: @font-weight-bold;
+    word-break: inherit;
+    white-space: unset;
+    text-align: center;
     &:focus{
         outline: 0
     }
@@ -188,7 +190,7 @@
 
 .btn-lg {
     min-width: 158px;
-    height: 52px;
+    min-height: 52px;
     font-size: 16px;
     .caret {
         border-width: 5px 5px 0;
@@ -197,12 +199,12 @@
 }
 .btn-sm {
     min-width: 88px;
-    height: 40px;
+    min-height: 40px;
     font-size: 14px;
 }
 .btn-xs {
     min-width: 72px;
-    height: 32px;
+    min-height: 32px;
     font-size: 12px;
 }
 

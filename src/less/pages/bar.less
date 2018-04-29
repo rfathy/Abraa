@@ -111,7 +111,7 @@
 		vertical-align: middle;
 	}
 	.searchBar{
-	    width: 40%;
+	    width: 50%;
 	    display: inline-block;
 	    vertical-align: middle;
 	    height: 63px;
@@ -122,6 +122,7 @@
 		    background-color: #fafbfc;
 		    border: solid 2px #edf1f5;
 		    line-height: 48px;
+		    position: relative;
 		    input{
 		    	background: none;
 		    	height: 45px;
@@ -145,6 +146,8 @@
 			    border: none;
 			    float: right;
 			    margin-top: -2px;
+			    position: absolute;
+    			right: 0;
 			    img{
 			    	vertical-align: middle;
 			    }
@@ -263,6 +266,10 @@
     padding: 0;
     .topNavBar{
 		height: 88px;
+		.searchBar{
+			width: 67%;
+		    margin-top: -20px;
+		}
 		.searchBox{
 			height: 64px;
 			margin-top: 3px;
@@ -330,11 +337,7 @@ main{
 .mainContent{
 	display: flex;
 	flex-wrap: wrap;
-	.sidebarSlider{
-		width: 19.5%;
-	}
 	.content{
-		width: 80.5%;
 		transition: all .10s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
 	}
 	.sidebarSlider{
@@ -343,10 +346,11 @@ main{
 		&.collapse{
 	        transform: translateX(-300px);
 	        width: 0;
-	        display: inline-block;
+	        display: none;
 	        & + .content{
 	        	width: 100%;
-        	    margin: 0 0 0 -30px;
+        	    margin: 0 auto;
+        	    padding: 0;
         	    transition: all .10s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
 	        }
 		}
@@ -458,7 +462,7 @@ main{
 							}
 						}
 						&:hover{
-							background: url("../images/icons/dark-grey-base_2.png") 88% center no-repeat;
+							background: url("../images/icons/dark-grey-base_2.png") 97% center no-repeat;
 							background-size: auto;
 							border:none;
 						}
@@ -596,8 +600,13 @@ main{
 			display: none;
 		}
 	}
+	&.borderedBar{
+	    border-bottom: @border-size-thin solid @hover;
+	    padding: 0;
+	    margin: 0 24px;
+	}
 	&.featureBar{
-	    .col-sm-4{
+	    .col-lg-4{
     	    height: 72px;
     	    display: flex;
     		align-items: center;
@@ -636,11 +645,6 @@ main{
 			font-weight: @font-weight-normal;
 		}
 	}	
-	&.borderedBar{
-	    border-bottom: @border-size-thin solid @hover;
-	    padding: 0;
-	    margin: 0 24px;
-	}
 	.sorting{
 		label{
 			display: inline-block;

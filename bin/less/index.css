@@ -2232,7 +2232,6 @@ span.avatar.icon-160-width {
 }
 .btn {
   display: inline-block;
-  text-align: center;
   vertical-align: middle;
   cursor: pointer;
   white-space: nowrap;
@@ -2242,10 +2241,12 @@ span.avatar.icon-160-width {
   border: 1px solid transparent;
   text-transform: uppercase;
   margin-bottom: 16px;
-  padding: 0 16px;
   font-family: "Muli", "Open Sans", Arial;
   letter-spacing: 0.4px;
   font-weight: 700;
+  word-break: inherit;
+  white-space: unset;
+  text-align: center;
 }
 .btn:focus {
   outline: 0;
@@ -2389,7 +2390,7 @@ fieldset[disabled] .btn-secondary:hover {
 }
 .btn-lg {
   min-width: 158px;
-  height: 52px;
+  min-height: 52px;
   font-size: 16px;
 }
 .btn-lg .caret {
@@ -2398,12 +2399,12 @@ fieldset[disabled] .btn-secondary:hover {
 }
 .btn-sm {
   min-width: 88px;
-  height: 40px;
+  min-height: 40px;
   font-size: 14px;
 }
 .btn-xs {
   min-width: 72px;
-  height: 32px;
+  min-height: 32px;
   font-size: 12px;
 }
 .btn-group {
@@ -3112,7 +3113,7 @@ fieldset[disabled] .checkbox-inline {
   width: 445px;
 }
 #Discover .swiper-slide {
-  margin-right: 215px;
+  margin-right: 30%;
 }
 #Discover + .Discover {
   top: 35%;
@@ -3145,6 +3146,9 @@ fieldset[disabled] .checkbox-inline {
   top: 30%;
 }
 /*suppliersCard*/
+.suppliersCard {
+  display: inline-block;
+}
 .suppliersCard .suppliersImg {
   border: 2px solid #e9ecf0;
   border-radius: 4px;
@@ -3315,7 +3319,7 @@ fieldset[disabled] .checkbox-inline {
   vertical-align: middle;
 }
 .topNavBar .searchBar {
-  width: 40%;
+  width: 50%;
   display: inline-block;
   vertical-align: middle;
   height: 63px;
@@ -3327,6 +3331,7 @@ fieldset[disabled] .checkbox-inline {
   background-color: #fafbfc;
   border: solid 2px #edf1f5;
   line-height: 48px;
+  position: relative;
 }
 .topNavBar .searchBar .searchBox input {
   background: none;
@@ -3349,6 +3354,8 @@ fieldset[disabled] .checkbox-inline {
   border: none;
   float: right;
   margin-top: -2px;
+  position: absolute;
+  right: 0;
 }
 .topNavBar .searchBar .searchBox .input-group-addon img {
   vertical-align: middle;
@@ -3469,6 +3476,10 @@ fieldset[disabled] .checkbox-inline {
 #mySearch .modal-dialog .topNavBar {
   height: 88px;
 }
+#mySearch .modal-dialog .topNavBar .searchBar {
+  width: 67%;
+  margin-top: -20px;
+}
 #mySearch .modal-dialog .topNavBar .searchBox {
   height: 64px;
   margin-top: 3px;
@@ -3530,11 +3541,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-.mainContent .sidebarSlider {
-  width: 19.5%;
-}
 .mainContent .content {
-  width: 80.5%;
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
 }
 .mainContent .sidebarSlider {
@@ -3544,11 +3551,12 @@ main {
 .mainContent .sidebarSlider.collapse {
   transform: translateX(-300px);
   width: 0;
-  display: inline-block;
+  display: none;
 }
 .mainContent .sidebarSlider.collapse + .content {
   width: 100%;
-  margin: 0 0 0 -30px;
+  margin: 0 auto;
+  padding: 0;
   transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
 }
 .mainContent .sidebarSlider #Breadcrumps {
@@ -3669,7 +3677,7 @@ main {
   color: #4da1ff;
 }
 .mainContent .sidebarSlider .sidebar ul .dropdown-menu li:hover {
-  background: url("../images/icons/dark-grey-base_2.png") 88% center no-repeat;
+  background: url("../images/icons/dark-grey-base_2.png") 97% center no-repeat;
   background-size: auto;
   border: none;
 }
@@ -3802,7 +3810,12 @@ main {
 .pageBar .barAction.hideMore {
   display: none;
 }
-.pageBar.featureBar .col-sm-4 {
+.pageBar.borderedBar {
+  border-bottom: 1px solid #e9ecf0;
+  padding: 0;
+  margin: 0 24px;
+}
+.pageBar.featureBar .col-lg-4 {
   height: 72px;
   display: flex;
   align-items: center;
@@ -3837,11 +3850,6 @@ main {
 .pageBar.controlBar h4 {
   opacity: 0.5;
   font-weight: 400;
-}
-.pageBar.borderedBar {
-  border-bottom: 1px solid #e9ecf0;
-  padding: 0;
-  margin: 0 24px;
 }
 .pageBar .sorting label {
   display: inline-block;
@@ -3968,7 +3976,7 @@ main {
   height: 50px;
 }
 .mainContent .content {
-  padding: 0;
+  padding: 0 4px;
 }
 .mainContent .content .banner {
   height: 315px;
@@ -3988,10 +3996,8 @@ main {
   padding: 40px 0;
 }
 .mainContent .content .pageSec.advertAreaSmall img {
-  width: 500px;
-}
-.mainContent .content .pageSec.advertAreaSmall a:first-child img {
-  margin-right: 20px;
+  width: 40%;
+  margin: 0 2%;
 }
 .mainContent .content .pageSec.advertAreaLarge {
   width: 100%;
@@ -4004,4 +4010,18 @@ main {
 }
 .mainContent .content .pageSec.noBorder {
   border: none;
+}
+@media (max-width: 1200px) {
+  .mainContent .content,
+  .mainContent .sidebarSlider.collapse + .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4px;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
+  }
+  .mainContent .sidebarSlider {
+    position: absolute;
+    z-index: 10;
+    width: 40%;
+  }
 }
