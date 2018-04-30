@@ -111,7 +111,7 @@
 
 		(function( $ ){
 			$.fn.collapsableSideBar = function(param2, param3) {
-				if($(window).width() < 992px) {
+				if($(window).width() <= 992) {
 
 					$(this).addClass(param2);
 					$(this).removeClass(param3);
@@ -126,9 +126,20 @@
 			}; 
 		})( jQuery );
 
+
 		$(document).ready(function() {
 			$('#sidebar').collapsableSideBar("collapse", "in");
+			if($(window).width() <= 830){
+				$(".swiper-slide").each(function(){
+					$(this).css("width", "45%");
+				});
+			}
 		});
 		$( window ).resize(function() {
 			$('#sidebar').collapsableSideBar("collapse", "in");
+			if($(window).width() <= 830){
+				$(".swiper-slide").each(function(){
+					$(this).css("width", "45%");
+				});
+			}
 		});

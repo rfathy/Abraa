@@ -94,6 +94,11 @@
     left: 0;
     right: 0;
     z-index: 1050;
+    .mysearchbtn{
+    	img{
+    		width: 40px;
+    	}
+    }
 	button.slideSideNav{
 		position: relative;
 	    display: inline-block;
@@ -148,6 +153,7 @@
 			    margin-top: -2px;
 			    position: absolute;
     			right: 0;
+			    top: 0px;
 			    img{
 			    	vertical-align: middle;
 			    }
@@ -239,7 +245,7 @@
 		padding: 3px 10px;
 		&:focus{
 			outline:0;
-			border: none;
+			border: 1px solid transparent;
 		}
 	}
 	.navbar-collapse{
@@ -256,6 +262,35 @@
   		}
 	}
 }
+@media (max-width: 994px){
+	.topNavBar .searchBar .searchBox input{
+		width: 60%;
+	}
+	.topNavBar .searchBar{
+	    width: 46%;
+	}
+}
+@media (max-width: @screen-sm){
+	.navbar-collapse{
+		margin-top: 44px;
+		height: auto;
+		position: absolute;
+		right: 14px;
+		top: 21px;
+	}
+	.topNavBar .logIn{
+	    background: @white;
+	    box-shadow: 0 1px 2px 0 #0000004c;
+	    padding: 15px;
+	    height: 67px;
+	    border-radius: @border-radius-base;
+	    margin-top: -9px;
+	}
+	#userSearch.onlyDesk{
+		display: none;
+	}
+}
+
 /*Search Dialog*/
 #mySearch{
   .modal-dialog{
@@ -580,6 +615,36 @@ main{
 		}
 	}
 }
+@media (max-width: @screen-md) {
+    .container-fluid{
+        padding: 0;
+    }
+    .mainContent {
+        .content, .sidebarSlider.collapse + .content{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
+        }
+        .sidebarSlider{
+            z-index: 10;
+            width: 40%;
+            .sidebar-inner{
+                left: 0px;
+                position: fixed;
+                padding-bottom: 90px;
+                width: 40%;
+                top: 60px;
+            }
+        }
+    }
+}
+@media (max-width: @screen-sm) {
+	.mainContent .sidebarSlider .sidebar-inner{
+	    width: 60%;
+	}
+}
+
 /***************************/
 /*************Pages bar*****************/
 /***************************/

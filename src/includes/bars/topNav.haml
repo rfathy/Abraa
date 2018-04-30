@@ -9,7 +9,8 @@
 				%a.logo{:herf=>""}
 					%img.img-responsive.icn{:src=>"images/img/logo.png"}
 				/Search form
-				%form.searchBar{'data-toggle'=>"modal", 'data-target'=>"#mySearch"}
+				
+				%form.searchBar.collapse.navbar-collapse#userSearch.onlyDesk{'data-toggle'=>"modal", 'data-target'=>"#mySearch"}
 					.form-group
 						.input-group.searchBox
 							.custom-select.firstChild
@@ -26,34 +27,35 @@
 							%button.input-group-addon.lastChild.btn 
 								%img.icn{:src => "images/icons/bg_2-2x.png"}
 				/ Popup modal for search results
-				#mySearch.modal{'tabindex'=>"-1", 'role'=>"dialog", 'aria-labelledby'=>"myModalLabel", 'aria-hidden'=>"true"}
-					.modal-dialog 
-						%nav.navbar
-							.container-fluid
-								.row.topNavBar
-									.col-md-12
-										%a.logo.col-md-2{:herf=>""}
-											%img.img-responsive.icn{:src=>"images/img/logo.png"}
+				/
+					#mySearch.modal{'tabindex'=>"-1", 'role'=>"dialog", 'aria-labelledby'=>"myModalLabel", 'aria-hidden'=>"true"}
+						.modal-dialog 
+							%nav.navbar
+								.container-fluid
+									.row.topNavBar
+										.col-md-12
+											%a.logo.col-md-2{:herf=>""}
+												%img.img-responsive.icn{:src=>"images/img/logo.png"}
 
-										%form.searchBar.col-md-7
-											.form-group
-												.input-group.searchBox
-													.custom-select.firstChild
-														%select
-															%option
-																Categories
-															%option
-																Electronics
-															%option
-																Electronics
-															%option
-																Electronics 
-													%input.form-control.input-md{:type=>"text", :placeholder=>"Search Items", :name=>"Amoun"}
-													%button.input-group-addon.lastChild.btn 
-														%img.icn{:src => "images/icons/bg_2-2x.png"}
-										.col-md-2.pull-right
-											%button.close{'type'=>"button", 'data-dismiss'=>"modal", 'aria-label'=>"Close"}
-												%img{:src => "images/icons/grey-normal_3-2x.png"}
+											%form.searchBar.col-md-7
+												.form-group
+													.input-group.searchBox
+														.custom-select.firstChild
+															%select
+																%option
+																	Categories
+																%option
+																	Electronics
+																%option
+																	Electronics
+																%option
+																	Electronics 
+														%input.form-control.input-md{:type=>"text", :placeholder=>"Search Items", :name=>"Amoun"}
+														%button.input-group-addon.lastChild.btn 
+															%img.icn{:src => "images/icons/bg_2-2x.png"}
+											.col-md-2.pull-right
+												%button.close{'type'=>"button", 'data-dismiss'=>"modal", 'aria-label'=>"Close"}
+													%img{:src => "images/icons/grey-normal_3-2x.png"}
 				/ Add new RFQ
 				/
 					%a.newRfq{:href=>""} 
@@ -62,6 +64,11 @@
 				/ User login area on/off btn for small screens
 				%button.navbar-toggle.collapsed{'type'=>"button", 'data-toggle'=>"collapse", 'data-target'=>"#userSettings", 'aria-expanded'=>"false"}
 					%img.avatar.img-responsive.icon-40-width{:src => "images/profiles/download.jpg"}
+
+				/ Search area on/off btn for small screens
+				%button.navbar-toggle.collapsed.mysearchbtn{'type'=>"button", 'data-toggle'=>"modal", 'data-target'=>"#mySearch"}
+					%img{:src => "images/icons/bg_2-3x.png"}
+
 				/ User login area (Logged in and not)
 				.collapse.navbar-collapse.pull-right#userSettings					
 					/

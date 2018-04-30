@@ -11,7 +11,7 @@
 <img class="img-responsive icn" src="images/img/logo.png" />
 </a>
 <!-- Search form -->
-<form class="searchBar" data-target="#mySearch" data-toggle="modal">
+<form class="searchBar collapse navbar-collapse onlyDesk" data-target="#mySearch" data-toggle="modal" id="userSearch">
 <div class="form-group">
 <div class="input-group searchBox">
 <div class="custom-select firstChild">
@@ -38,6 +38,7 @@ Electronics
 </div>
 </form>
 <!-- Popup modal for search results -->
+<!--
 <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal" id="mySearch" role="dialog" tabindex="-1">
 <div class="modal-dialog">
 <nav class="navbar">
@@ -84,6 +85,7 @@ Electronics
 </nav>
 </div>
 </div>
+-->
 <!-- Add new RFQ -->
 <!--
 <a class="newRfq" href="">
@@ -94,6 +96,10 @@ New RFQ
 <!-- User login area on/off btn for small screens -->
 <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#userSettings" data-toggle="collapse" type="button">
 <img class="avatar img-responsive icon-40-width" src="images/profiles/download.jpg" />
+</button>
+<!-- Search area on/off btn for small screens -->
+<button class="navbar-toggle collapsed mysearchbtn" data-target="#mySearch" data-toggle="modal" type="button">
+<img src="images/icons/bg_2-3x.png" />
 </button>
 <!-- User login area (Logged in and not) -->
 <div class="collapse navbar-collapse pull-right" id="userSettings">

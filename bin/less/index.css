@@ -1027,6 +1027,11 @@ button {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 992px) {
+  .onlyDesk {
+    display: none;
+  }
+}
 .icn {
   display: inline-block;
   background-repeat: no-repeat;
@@ -3123,12 +3128,7 @@ fieldset[disabled] .checkbox-inline {
 }
 @media (max-width: 1200px) {
   #Discover .swiper-slide {
-    margin-right: 35%;
-  }
-}
-@media (max-width: 1120px) {
-  #Discover .swiper-slide {
-    margin-right: 42%;
+    margin-right: 40%;
   }
 }
 /*Discover Card*/
@@ -3312,6 +3312,9 @@ fieldset[disabled] .checkbox-inline {
   right: 0;
   z-index: 1050;
 }
+.topNavBar .mysearchbtn img {
+  width: 40px;
+}
 .topNavBar button.slideSideNav {
   position: relative;
   display: inline-block;
@@ -3366,6 +3369,7 @@ fieldset[disabled] .checkbox-inline {
   margin-top: -2px;
   position: absolute;
   right: 0;
+  top: 0px;
 }
 .topNavBar .searchBar .searchBox .input-group-addon img {
   vertical-align: middle;
@@ -3464,7 +3468,7 @@ fieldset[disabled] .checkbox-inline {
 }
 .topNavBar .navbar-toggle:focus {
   outline: 0;
-  border: none;
+  border: 1px solid transparent;
 }
 .topNavBar .navbar-collapse.in .avatar,
 .topNavBar .navbar-collapse.in a.dropdown-toggle {
@@ -3474,6 +3478,34 @@ fieldset[disabled] .checkbox-inline {
   display: block;
   right: -60px;
   padding-left: 0;
+}
+@media (max-width: 994px) {
+  .topNavBar .searchBar .searchBox input {
+    width: 60%;
+  }
+  .topNavBar .searchBar {
+    width: 46%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    margin-top: 44px;
+    height: auto;
+    position: absolute;
+    right: 14px;
+    top: 21px;
+  }
+  .topNavBar .logIn {
+    background: #ffffff;
+    box-shadow: 0 1px 2px 0 #0000004c;
+    padding: 15px;
+    height: 67px;
+    border-radius: 4px;
+    margin-top: -9px;
+  }
+  #userSearch.onlyDesk {
+    display: none;
+  }
 }
 /*Search Dialog*/
 #mySearch .modal-dialog {
@@ -3802,6 +3834,34 @@ main {
 .mainContent .sidebarSlider .footer .Designs:hover {
   opacity: 1;
 }
+@media (max-width: 992px) {
+  .container-fluid {
+    padding: 0;
+  }
+  .mainContent .content,
+  .mainContent .sidebarSlider.collapse + .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
+  }
+  .mainContent .sidebarSlider {
+    z-index: 10;
+    width: 40%;
+  }
+  .mainContent .sidebarSlider .sidebar-inner {
+    left: 0px;
+    position: fixed;
+    padding-bottom: 90px;
+    width: 40%;
+    top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .mainContent .sidebarSlider .sidebar-inner {
+    width: 60%;
+  }
+}
 /***************************/
 /*************Pages bar*****************/
 /***************************/
@@ -3954,7 +4014,7 @@ main {
 .swiper-button-next {
   position: absolute;
   top: 44%;
-  z-index: 10;
+  z-index: 9;
   cursor: pointer;
   width: 64px;
   height: 168px;
@@ -4006,6 +4066,26 @@ main {
     right: -30px;
   }
 }
+@media (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: -20px;
+  }
+}
+@media (max-width: 800px) {
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: -15px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev,
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    display: none;
+  }
+}
 .clear {
   clear: both;
   display: block !important;
@@ -4052,23 +4132,4 @@ main {
 }
 .mainContent .content .pageSec.noBorder {
   border: none;
-}
-@media (max-width: 992px) {
-  .mainContent .content,
-  .mainContent .sidebarSlider.collapse + .content {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 4px;
-    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
-  }
-  .mainContent .sidebarSlider {
-    z-index: 10;
-    width: 40%;
-  }
-  .mainContent .sidebarSlider .sidebar-inner {
-    left: 0px;
-    position: fixed;
-    bottom: 0px;
-    width: 40%;
-  }
 }
