@@ -4799,6 +4799,7 @@ table td.popover-wrapper .popover-modal:after {
 /*Custom*/
 .topNavBar {
   background: #ffffff;
+  -webkit-box-shadow: 0 1px 2px 0 #cecece;
   box-shadow: 0 1px 2px 0 #0000004c;
   height: 63px;
   padding-top: 9px;
@@ -4993,6 +4994,7 @@ table td.popover-wrapper .popover-modal:after {
   }
   .topNavBar .logIn {
     background: #ffffff;
+    -webkit-box-shadow: 0 1px 2px 0 #cecece;
     box-shadow: 0 1px 2px 0 #0000004c;
     padding: 15px;
     height: 67px;
@@ -5125,7 +5127,7 @@ main {
   width: 6px;
 }
 .mainContent .sidebarSlider .sidebar-inner::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #fafbfc;
 }
 .mainContent .sidebarSlider .sidebar-inner::-webkit-scrollbar-thumb {
   background: #a8b0bf;
