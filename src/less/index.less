@@ -24,7 +24,7 @@
 
 .mainContent {
 	.content{
-        padding: 0 4px;
+        padding: 0 1px 0 0;
 		.banner{
 		    height: 315px;
 		    background-image: url("../images/img/banner.png");
@@ -61,7 +61,7 @@
 	}
 }
 
- @media (max-width: @screen-lg) {
+ @media (max-width: @screen-md) {
     .mainContent {
         .content, .sidebarSlider.collapse + .content{
             width: 100%;
@@ -70,10 +70,13 @@
             transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
         }
         .sidebarSlider{
-            position: absolute;
             z-index: 10;
             width: 40%;
-            .sidebar .sidebar-inner{
+            .sidebar-inner{
+                left: 0px;
+                position: fixed;
+                bottom: 0px;
+                width: 40%;
             }
         }
     }

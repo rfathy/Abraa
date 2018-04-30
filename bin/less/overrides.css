@@ -5063,32 +5063,47 @@ main {
   margin-bottom: 0;
   margin-top: 16px;
 }
-.mainContent .sidebarSlider .sidebar .sidebar-inner {
-  position: absolute;
+.mainContent .sidebarSlider .sidebar-inner {
+  position: fixed;
   left: 0;
-  right: 0;
   background: #fafbfc;
   padding-bottom: 10px;
+  width: inherit;
+  height: 100%;
+  overflow-y: auto;
+  bottom: 0px;
 }
-.mainContent .sidebarSlider .sidebar ul {
+.mainContent .sidebarSlider .sidebar-inner::-webkit-scrollbar {
+  width: 6px;
+}
+.mainContent .sidebarSlider .sidebar-inner::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.mainContent .sidebarSlider .sidebar-inner::-webkit-scrollbar-thumb {
+  background: #a8b0bf;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.mainContent .sidebarSlider ul {
   letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
 }
-.mainContent .sidebarSlider .sidebar ul li {
+.mainContent .sidebarSlider ul li {
   margin: 0;
   padding: 0 0 0 40px;
   line-height: 56px;
 }
-.mainContent .sidebarSlider .sidebar ul li img.icn {
+.mainContent .sidebarSlider ul li img.icn {
   vertical-align: middle;
   margin-top: -3px;
   margin-right: 5px;
 }
-.mainContent .sidebarSlider .sidebar ul li a,
-.mainContent .sidebarSlider .sidebar ul li a:link,
-.mainContent .sidebarSlider .sidebar ul li a:active,
-.mainContent .sidebarSlider .sidebar ul li a:visited {
+.mainContent .sidebarSlider ul li a,
+.mainContent .sidebarSlider ul li a:link,
+.mainContent .sidebarSlider ul li a:active,
+.mainContent .sidebarSlider ul li a:visited {
   color: #252833;
   opacity: 0.8;
   font-family: "Muli", "Open Sans", Arial;
@@ -5102,38 +5117,38 @@ main {
   background-size: auto;
   padding-left: 50px;
 }
-.mainContent .sidebarSlider .sidebar ul li a:hover,
-.mainContent .sidebarSlider .sidebar ul li a:link:hover,
-.mainContent .sidebarSlider .sidebar ul li a:active:hover,
-.mainContent .sidebarSlider .sidebar ul li a:visited:hover {
+.mainContent .sidebarSlider ul li a:hover,
+.mainContent .sidebarSlider ul li a:link:hover,
+.mainContent .sidebarSlider ul li a:active:hover,
+.mainContent .sidebarSlider ul li a:visited:hover {
   color: #4da1ff;
 }
-.mainContent .sidebarSlider .sidebar ul li a .caret,
-.mainContent .sidebarSlider .sidebar ul li a:link .caret,
-.mainContent .sidebarSlider .sidebar ul li a:active .caret,
-.mainContent .sidebarSlider .sidebar ul li a:visited .caret {
+.mainContent .sidebarSlider ul li a .caret,
+.mainContent .sidebarSlider ul li a:link .caret,
+.mainContent .sidebarSlider ul li a:active .caret,
+.mainContent .sidebarSlider ul li a:visited .caret {
   position: absolute;
   right: 0;
   top: 50%;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
-.mainContent .sidebarSlider .sidebar ul li:hover {
+.mainContent .sidebarSlider ul li:hover {
   border-left: 2px solid #4da1ff;
   padding-left: 38px;
   background: url("../images/icons/dark-grey-base_2.png") 92% center no-repeat;
   background-size: auto;
 }
-.mainContent .sidebarSlider .sidebar ul li.open {
+.mainContent .sidebarSlider ul li.open {
   line-height: 64px;
 }
-.mainContent .sidebarSlider .sidebar ul li.dropdown:hover {
+.mainContent .sidebarSlider ul li.dropdown:hover {
   background: none;
 }
-.mainContent .sidebarSlider .sidebar ul.open .dropdown-menu {
+.mainContent .sidebarSlider ul.open .dropdown-menu {
   display: block;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu {
+.mainContent .sidebarSlider ul .dropdown-menu {
   position: relative;
   width: 100%;
   top: 0;
@@ -5142,14 +5157,14 @@ main {
   box-shadow: none;
   padding-left: 50px;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li {
+.mainContent .sidebarSlider ul .dropdown-menu li {
   line-height: 40px;
   padding-left: 0;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:link,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:active,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:visited {
+.mainContent .sidebarSlider ul .dropdown-menu li a,
+.mainContent .sidebarSlider ul .dropdown-menu li a:link,
+.mainContent .sidebarSlider ul .dropdown-menu li a:active,
+.mainContent .sidebarSlider ul .dropdown-menu li a:visited {
   font-family: "Open Sans", Arial;
   font-size: 11px;
   font-weight: 400;
@@ -5157,22 +5172,22 @@ main {
   opacity: 0.8;
   padding-left: 0;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:hover,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:link:hover,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:active:hover,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:visited:hover {
+.mainContent .sidebarSlider ul .dropdown-menu li a:hover,
+.mainContent .sidebarSlider ul .dropdown-menu li a:link:hover,
+.mainContent .sidebarSlider ul .dropdown-menu li a:active:hover,
+.mainContent .sidebarSlider ul .dropdown-menu li a:visited:hover {
   opacity: 1;
   font-weight: 700;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a.more,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:link.more,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:active.more,
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li a:visited.more {
+.mainContent .sidebarSlider ul .dropdown-menu li a.more,
+.mainContent .sidebarSlider ul .dropdown-menu li a:link.more,
+.mainContent .sidebarSlider ul .dropdown-menu li a:active.more,
+.mainContent .sidebarSlider ul .dropdown-menu li a:visited.more {
   letter-spacing: -0.3px;
   font-weight: 600;
   color: #4da1ff;
 }
-.mainContent .sidebarSlider .sidebar ul .dropdown-menu li:hover {
+.mainContent .sidebarSlider ul .dropdown-menu li:hover {
   background: url("../images/icons/dark-grey-base_2.png") 97% center no-repeat;
   background-size: auto;
   border: none;
@@ -5311,7 +5326,7 @@ main {
   padding: 0;
   margin: 0 24px;
 }
-.pageBar.featureBar .col-lg-4 {
+.pageBar.featureBar .col-md-4 {
   height: 72px;
   display: flex;
   align-items: center;

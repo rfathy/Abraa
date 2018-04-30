@@ -362,110 +362,123 @@ main{
 				margin-top: 16px;
 			}
 		}
-		.sidebar{
-			.sidebar-inner{
-				position: absolute;
-				left: 0;
-				right: 0;
-				background:#fafbfc;
-				padding-bottom: 10px;
-			}
-			ul{
-				letter-spacing: -0.2px;
+		.sidebar-inner{
+			position: fixed;
+			left: 0;
+			background:#fafbfc;
+			padding-bottom: 10px;
+			width: inherit;
+		    height: 100%;
+		    overflow-y: auto;
+		    bottom: 0px;
+		    &::-webkit-scrollbar{
+	            width: 6px;
+	        }
+	        &::-webkit-scrollbar-track{
+	            background: @white;
+	        }
+	        &::-webkit-scrollbar-thumb{
+	            background: @gray;
+	            border-radius: @border-radius-base;
+	            cursor: pointer;
+	            margin-right: @margin-t;
+	        }
+		}
+		ul{
+			letter-spacing: -0.2px;
+			margin: 0;
+			padding: 0;
+			li{
 				margin: 0;
-				padding: 0;
-				li{
-					margin: 0;
-					padding: 0 0 0 40px;
-					line-height: 56px;
-					img.icn{
-						vertical-align: middle;
-						margin-top: -3px;
-						margin-right: 5px;
+				padding: 0 0 0 40px;
+				line-height: 56px;
+				img.icn{
+					vertical-align: middle;
+					margin-top: -3px;
+					margin-right: 5px;
+				}
+				a,
+				a:link,
+				a:active,
+				a:visited{
+					color: @hdr;
+					opacity: 0.8;
+					font-family: @font-family-muli;
+					font-size: @font-size-md;
+					font-weight: @font-weight-semi;
+					display: inline-block;
+					width: 90%;
+					position: relative;
+					background-repeat: no-repeat;
+					background-position: center left;
+					background-size: auto;
+					padding-left: 50px;
+					&:hover{
+						color:@blue;
 					}
+					.caret{
+						position: absolute;
+						right: 0;
+						top: 50%;
+						border-right: 5px solid transparent;
+						border-left: 5px solid transparent;
+					}
+				}
+				&:hover{
+					border-left: 2px solid @blue;
+					padding-left: 38px;
+					background: url("../images/icons/dark-grey-base_2.png") 92% center no-repeat;
+					background-size: auto;
+				}
+				&.open{
+					line-height: 64px;
+				}
+				&.dropdown{
+					&:hover{
+						background: none;
+					}
+				}
+			}
+			&.open{
+				.dropdown-menu{
+					display: block;
+				}
+			}
+			.dropdown-menu{
+				position: relative;
+				width: 100%;
+				top: 0;
+				border: none;
+				background: transparent;
+				box-shadow: none;
+			    padding-left: 50px;
+				li{
+					line-height: 40px;
+					padding-left: 0;
 					a,
 					a:link,
 					a:active,
 					a:visited{
-						color: @hdr;
+						font-family:@font-family-OpenSans;
+						font-size:@font-size-xs;
+						font-weight: @font-weight-normal;
+						color: @bdy;
 						opacity: 0.8;
-						font-family: @font-family-muli;
-						font-size: @font-size-md;
-						font-weight: @font-weight-semi;
-						display: inline-block;
-						width: 90%;
-						position: relative;
-						background-repeat: no-repeat;
-						background-position: center left;
-						background-size: auto;
-						padding-left: 50px;
+						padding-left: 0;
 						&:hover{
-							color:@blue;
+							opacity:1;
+							font-weight: @font-weight-bold; 
 						}
-						.caret{
-							position: absolute;
-							right: 0;
-							top: 50%;
-							border-right: 5px solid transparent;
-							border-left: 5px solid transparent;
+						&.more{
+							letter-spacing: -0.3px;
+							font-weight: @font-weight-semi; 
+							color: @blue;
 						}
 					}
 					&:hover{
-						border-left: 2px solid @blue;
-						padding-left: 38px;
-						background: url("../images/icons/dark-grey-base_2.png") 92% center no-repeat;
+						background: url("../images/icons/dark-grey-base_2.png") 97% center no-repeat;
 						background-size: auto;
-					}
-					&.open{
-						line-height: 64px;
-					}
-					&.dropdown{
-						&:hover{
-							background: none;
-						}
-					}
-				}
-				&.open{
-					.dropdown-menu{
-						display: block;
-					}
-				}
-				.dropdown-menu{
-					position: relative;
-					width: 100%;
-					top: 0;
-					border: none;
-					background: transparent;
-					box-shadow: none;
-				    padding-left: 50px;
-					li{
-						line-height: 40px;
-						padding-left: 0;
-						a,
-						a:link,
-						a:active,
-						a:visited{
-							font-family:@font-family-OpenSans;
-							font-size:@font-size-xs;
-							font-weight: @font-weight-normal;
-							color: @bdy;
-							opacity: 0.8;
-							padding-left: 0;
-							&:hover{
-								opacity:1;
-								font-weight: @font-weight-bold; 
-							}
-							&.more{
-								letter-spacing: -0.3px;
-								font-weight: @font-weight-semi; 
-								color: @blue;
-							}
-						}
-						&:hover{
-							background: url("../images/icons/dark-grey-base_2.png") 97% center no-repeat;
-							background-size: auto;
-							border:none;
-						}
+						border:none;
 					}
 				}
 			}
@@ -559,7 +572,6 @@ main{
 		}
 	}
 }
-
 /***************************/
 /*************Pages bar*****************/
 /***************************/
@@ -606,7 +618,7 @@ main{
 	    margin: 0 24px;
 	}
 	&.featureBar{
-	    .col-lg-4{
+	    .col-md-4{
     	    height: 72px;
     	    display: flex;
     		align-items: center;

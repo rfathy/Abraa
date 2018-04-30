@@ -1,7 +1,7 @@
 %nav.navbar
 	.container-fluid
 		.row.topNavBar
-			.col-lg-12
+			.col-md-12
 				/ Sidebar on/off btn
 				%button.slideSideNav.collapsed{:type=>"button", 'data-toggle'=>"collapse", 'data-target'=>"#sidebar", 'aria-expanded'=>"false"}
 					%img.img-responsive.icn{:src=>"images/icons/slideSide.png"}
@@ -31,11 +31,11 @@
 						%nav.navbar
 							.container-fluid
 								.row.topNavBar
-									.col-lg-12
-										%a.logo.col-lg-2{:herf=>""}
+									.col-md-12
+										%a.logo.col-md-2{:herf=>""}
 											%img.img-responsive.icn{:src=>"images/img/logo.png"}
 
-										%form.searchBar.col-lg-7
+										%form.searchBar.col-md-7
 											.form-group
 												.input-group.searchBox
 													.custom-select.firstChild
@@ -51,7 +51,7 @@
 													%input.form-control.input-md{:type=>"text", :placeholder=>"Search Items", :name=>"Amoun"}
 													%button.input-group-addon.lastChild.btn 
 														%img.icn{:src => "images/icons/bg_2-2x.png"}
-										.col-lg-2.pull-right
+										.col-md-2.pull-right
 											%button.close{'type'=>"button", 'data-dismiss'=>"modal", 'aria-label'=>"Close"}
 												%img{:src => "images/icons/grey-normal_3-2x.png"}
 				/ Add new RFQ

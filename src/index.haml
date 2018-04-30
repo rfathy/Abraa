@@ -11,7 +11,7 @@
 				/ Sidebar Slider
 				= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeSideBar.haml', File.dirname(__FILE__))).render
 				
-				#content.col-lg-9.content
+				#content.col-md-9.content
 					.banner
 					= Haml::Engine.new(File.read(File.expand_path 'includes/bars/featureBar.haml', File.dirname(__FILE__))).render
 					.sliderSec.pageSec
@@ -92,16 +92,16 @@
 						- $secTitle = 'Premium Buyers Sourcing from Abraa'
 						- $secMore = 'hideMore'
 						= Haml::Engine.new(File.read(File.expand_path 'includes/bars/homeTitleBar.haml', File.dirname(__FILE__))).render
-						.suppliersCard.col-lg-3
+						.suppliersCard.col-md-3
 							.suppliersImg
 								%img{:src=>"images/img/sponsor2.png"}
-						.suppliersCard.col-lg-3
+						.suppliersCard.col-md-3
 							.suppliersImg
 								%img{:src=>"images/img/sponsor2.png"}
-						.suppliersCard.col-lg-3
+						.suppliersCard.col-md-3
 							.suppliersImg
 								%img{:src=>"images/img/sponsor2.png"}
-						.suppliersCard.col-lg-3
+						.suppliersCard.col-md-3
 							.suppliersImg
 								%img{:src=>"images/img/sponsor2.png"}
 	= Haml::Engine.new(File.read(File.expand_path 'includes/footers/homeFooter.haml', File.dirname(__FILE__))).render
@@ -111,7 +111,7 @@
 
 		(function( $ ){
 			$.fn.collapsableSideBar = function(param2, param3) {
-				if($(window).width() < 1200) {
+				if($(window).width() < 992px) {
 
 					$(this).addClass(param2);
 					$(this).removeClass(param3);
@@ -121,6 +121,7 @@
 					$(this).addClass(param3);
 					$(this).removeClass(param2);
 				}
+				
 				return this;
 			}; 
 		})( jQuery );
