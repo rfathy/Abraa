@@ -267,8 +267,7 @@
     .topNavBar{
 		height: 88px;
 		.searchBar{
-			width: 67%;
-		    margin-top: -20px;
+			width: 56%;
 		}
 		.searchBox{
 			height: 64px;
@@ -326,6 +325,11 @@
     }
   }
 }
+@media (max-width: @screen-md) {
+	#mySearch .modal-dialog .topNavBar .searchBar{
+		margin-top: -20px;
+	}
+}
 /*Content affected by fixed top nav*/
 main{
 	margin-top: 63px;
@@ -342,6 +346,7 @@ main{
 	}
 	.sidebarSlider{
 		background:#fafbfc;
+		padding: 0;
 		transition: transform .25s cubic-bezier(0.4,0.0,0.2,1),visibility 0s linear 0s;
 		&.collapse{
 	        transform: translateX(-300px);
@@ -466,6 +471,8 @@ main{
 						color: @bdy;
 						opacity: 0.8;
 						padding-left: 0;
+					    white-space: normal;
+    					line-height: 16px;
 						&:hover{
 							opacity:1;
 							font-weight: @font-weight-bold; 

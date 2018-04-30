@@ -3113,13 +3113,23 @@ fieldset[disabled] .checkbox-inline {
   width: 445px;
 }
 #Discover .swiper-slide {
-  margin-right: 30%;
+  margin-right: 25%;
 }
 #Discover + .Discover {
   top: 35%;
 }
 #Discover + .Discover + .Discover {
   top: 35%;
+}
+@media (max-width: 1200px) {
+  #Discover .swiper-slide {
+    margin-right: 35%;
+  }
+}
+@media (max-width: 1120px) {
+  #Discover .swiper-slide {
+    margin-right: 42%;
+  }
 }
 /*Discover Card*/
 .discoverBrand .discoverImg {
@@ -3477,8 +3487,7 @@ fieldset[disabled] .checkbox-inline {
   height: 88px;
 }
 #mySearch .modal-dialog .topNavBar .searchBar {
-  width: 67%;
-  margin-top: -20px;
+  width: 56%;
 }
 #mySearch .modal-dialog .topNavBar .searchBox {
   height: 64px;
@@ -3530,6 +3539,11 @@ fieldset[disabled] .checkbox-inline {
   outline: 0;
   border: none;
 }
+@media (max-width: 992px) {
+  #mySearch .modal-dialog .topNavBar .searchBar {
+    margin-top: -20px;
+  }
+}
 /*Content affected by fixed top nav*/
 main {
   margin-top: 63px;
@@ -3546,6 +3560,7 @@ main {
 }
 .mainContent .sidebarSlider {
   background: #fafbfc;
+  padding: 0;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
 }
 .mainContent .sidebarSlider.collapse {
@@ -3676,6 +3691,8 @@ main {
   color: #3e4352;
   opacity: 0.8;
   padding-left: 0;
+  white-space: normal;
+  line-height: 16px;
 }
 .mainContent .sidebarSlider ul .dropdown-menu li a:hover,
 .mainContent .sidebarSlider ul .dropdown-menu li a:link:hover,
@@ -3972,7 +3989,7 @@ main {
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background-image: url("../images/icons/dark-grey-base_2-2x.png");
-  right: -26px;
+  right: -35px;
   left: auto;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -3983,6 +4000,12 @@ main {
 .swiper-container-rtl .swiper-button-prev:hover {
   background-image: url("../images/icons/dark-grey-base_2-2x-blue.png");
 }
+@media (max-width: 1090px) {
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: -30px;
+  }
+}
 .clear {
   clear: both;
   display: block !important;
@@ -3991,8 +4014,11 @@ main {
   clear: both;
   height: 50px;
 }
+.mainContent {
+  margin: 0;
+}
 .mainContent .content {
-  padding: 0 1px 0 0;
+  padding: 0;
 }
 .mainContent .content .banner {
   height: 315px;
