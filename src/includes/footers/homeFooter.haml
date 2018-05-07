@@ -19,3 +19,44 @@
 
 // styles overrides
 %script{'src' => 'js/styles.js'}
+
+// home sidebar collapsed in small screens
+%script{'src' => 'https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js'}
+:javascript
+	$(".sidebar-inner").stick_in_parent();
+:javascript
+
+	(function( $ ){
+		$.fn.collapsableSideBar = function(param2, param3) {
+			if($(window).width() <= 992) {
+
+				$(this).addClass(param2);
+				$(this).removeClass(param3);
+
+			}
+			else{
+				$(this).addClass(param3);
+				$(this).removeClass(param2);
+			}
+			
+			return this;
+		}; 
+	})( jQuery );
+
+
+	$(document).ready(function() {
+		$('#sidebar').collapsableSideBar("collapse", "in");
+		if($(window).width() <= 830){
+			$(".swiper-slide").each(function(){
+				$(this).css("width", "45%");
+			});
+		}
+	});
+	$( window ).resize(function() {
+		$('#sidebar').collapsableSideBar("collapse", "in");
+		if($(window).width() <= 830){
+			$(".swiper-slide").each(function(){
+				$(this).css("width", "45%");
+			});
+		}
+	});
